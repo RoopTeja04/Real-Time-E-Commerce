@@ -1,0 +1,35 @@
+<svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    width="200" 
+    height="200" 
+    viewBox="0 0 200 200" 
+    fill="none">
+  <!-- Circle for base -->
+  <circle cx="100" cy="100" r="95" stroke="orange" stroke-width="5" fill="white" />
+  
+  <!-- Shopping cart icon -->
+  <path 
+      d="M50 50 H140 L130 110 H60 L50 50 Z" 
+      fill="blue" 
+      stroke="orange" 
+      stroke-width="2"
+      />
+  
+  <!-- Handle of the cart -->
+  <line 
+      x1="55" y1="45" x2="75" y2="20" 
+      stroke="orange" stroke-width="3" />
+  
+  <!-- Wheels -->
+  <circle cx="70" cy="120" r="7" fill="orange" />
+  <circle cx="120" cy="120" r="7" fill="orange" />
+
+  <!-- Text -->
+  <text 
+      x="50%" 
+      y="170" 
+      text-anchor="middle" 
+      font-family="Arial, sans-serif" 
+      font-size="18" 
+      fill="blue">E-Shop</text>
+</svg>
