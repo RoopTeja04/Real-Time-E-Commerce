@@ -121,7 +121,7 @@ const Laptops = [
     {
         id: 10,
         name: "Microsoft Surface Go 2",
-        imageURL: "https://m.media-amazon.com/images/I/71zop8dmNFL.jpg",
+        imageURL: "https://images-cdn.ubuy.co.in/66264df2d5f08a0b82476c21-microsoft-surface-go-2-tablet-10-5-4.jpg",
         price: 73999,
         Ram: "8GB LPDDR4x",
         storage: "128GB SSD",

@@ -186,7 +186,7 @@ const Mobiles = () => {
             value="10000 to 25000"
             onChange={(e) => handleRangeChange(e.target.value)}
           />
-          <span>10,000 to 25,000</span>
+          <span className="text-base tracking-wide pl-1">₹ 10,000 to ₹ 25,000</span>
         </label>
         <label>
           <input
@@ -194,7 +194,7 @@ const Mobiles = () => {
             value="25000 to 50000"
             onChange={(e) => handleRangeChange(e.target.value)}
           />
-          <span>25,000 to 50,000</span>
+          <span className="text-base tracking-wide pl-1">₹ 25,000 to ₹ 50,000</span>
         </label>
         <label>
           <input
@@ -202,7 +202,7 @@ const Mobiles = () => {
             value="50000 to 75000"
             onChange={(e) => handleRangeChange(e.target.value)}
           />
-          <span>50,000 to 75,000</span>
+          <span className="text-base tracking-wide pl-1">₹ 50,000 to ₹ 75,000</span>
         </label>
         <label>
           <input
@@ -210,7 +210,7 @@ const Mobiles = () => {
             value="75000 to 100000"
             onChange={(e) => handleRangeChange(e.target.value)}
           />
-          <span>75,000 to 1,00,000</span>
+          <span className="text-base tracking-wide pl-1">₹ 75,000 to ₹ 1,00,000</span>
         </label>
 
         <p className="text-lg font-semibold tracking-wide pt-4 pb-2">
@@ -222,7 +222,31 @@ const Mobiles = () => {
             value="4 to 5"
             onChange={(e) => handleStarRating(e.target.value)}
           />
-          <span>4 to 5</span>
+          <span className="text-base tracking-wide pl-1">4 to 5</span>
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            value="3 to 4"
+            onChange={(e) => handleStarRating(e.target.value)}
+          />
+          <span className="text-base tracking-wide pl-1">3 to 4</span>
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            value="2 to 3"
+            onChange={(e) => handleStarRating(e.target.value)}
+          />
+          <span className="text-base tracking-wide pl-1">2 to 3</span>
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            value="1 to 2"
+            onChange={(e) => handleStarRating(e.target.value)}
+          />
+          <span className="text-base tracking-wide pl-1">1 to 2</span>
         </label>
       </div>
 
@@ -244,7 +268,14 @@ const Mobiles = () => {
             ))}
           </div>
         ) : (
-          <p>No products found</p>
+          <>
+            <div className="flex flex-col items-center mt-28">
+              <img 
+                className="h-4/5 w-1/2"
+                src={`https://www.new4you.in/img/no_products_found.png`} alt="No items found" 
+              />
+            </div>
+          </>
         )}
       </div>
     </div>
