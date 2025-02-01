@@ -10,7 +10,7 @@ const shoes = [
         color: "Black/Red",
         material: "Mesh",
         sizeRange: "6-12",
-        rating: 4.5
+        starRating: 4.5
     },
     {
         id: 2,
@@ -23,7 +23,7 @@ const shoes = [
         color: "Core Black",
         material: "Primeknit",
         sizeRange: "6-12",
-        rating: 4.8
+        starRating: 4.8
     },
     {
         id: 3,
@@ -36,7 +36,7 @@ const shoes = [
         color: "White/Red",
         material: "Mesh",
         sizeRange: "6-12",
-        rating: 4.6
+        starRating: 4.6
     },
     {
         id: 4,
@@ -49,7 +49,7 @@ const shoes = [
         color: "Black",
         material: "Leather",
         sizeRange: "6-11",
-        rating: 4.2
+        starRating: 4.2
     },
     {
         id: 5,
@@ -62,7 +62,7 @@ const shoes = [
         color: "Brown",
         material: "Synthetic",
         sizeRange: "6-12",
-        rating: 4.1
+        starRating: 4.1
     },
     {
         id: 6,
@@ -75,7 +75,7 @@ const shoes = [
         color: "Olive Green",
         material: "Leather",
         sizeRange: "6-11",
-        rating: 4.4
+        starRating: 4.4
     },
     {
         id: 7,
@@ -88,7 +88,7 @@ const shoes = [
         color: "Navy Blue",
         material: "Mesh",
         sizeRange: "6-12",
-        rating: 4.3
+        starRating: 4.3
     },
     {
         id: 8,
@@ -101,7 +101,7 @@ const shoes = [
         color: "Gray/Black",
         material: "Mesh",
         sizeRange: "6-10",
-        rating: 4.0
+        starRating: 4.0
     },
     {
         id: 9,
@@ -114,7 +114,7 @@ const shoes = [
         color: "Black",
         material: "Canvas",
         sizeRange: "6-12",
-        rating: 4.1
+        starRating: 4.1
     },
     {
         id: 10,
@@ -127,7 +127,7 @@ const shoes = [
         color: "Brown",
         material: "Leather",
         sizeRange: "6-12",
-        rating: 4.5
+        starRating: 4.5
     },
     {
         id: 11,
@@ -140,7 +140,7 @@ const shoes = [
         color: "White/Black",
         material: "Leather",
         sizeRange: "6-12",
-        rating: 4.7
+        starRating: 4.7
     },
     {
         id: 12,
@@ -153,7 +153,7 @@ const shoes = [
         color: "Brown",
         material: "Synthetic",
         sizeRange: "6-11",
-        rating: 4.0
+        starRating: 4.0
     },
     {
         id: 13,
@@ -166,7 +166,7 @@ const shoes = [
         color: "Black",
         material: "Mesh",
         sizeRange: "6-12",
-        rating: 4.6
+        starRating: 4.6
     },
     {
         id: 14,
@@ -179,7 +179,7 @@ const shoes = [
         color: "Blue",
         material: "Synthetic",
         sizeRange: "6-12",
-        rating: 4.0
+        starRating: 4.0
     },
     {
         id: 15,
@@ -192,7 +192,7 @@ const shoes = [
         color: "White/Peach",
         material: "Synthetic",
         sizeRange: "6-12",
-        rating: 4.7
+        starRating: 4.7
     }
 ];
 

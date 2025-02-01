@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import MobilesData from "../ShopData/Electronics/Mobile";
-import { useCart } from "../Carts&Orders/cartContext";
+import MobilesData from "../../ShopData/Electronics/Mobile";
+import { useCart } from "../../Carts&Orders/cartContext";
 
 const Mobiles = () => {
 

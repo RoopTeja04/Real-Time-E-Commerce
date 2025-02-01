@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import LaptopsData from '../ShopData/Electronics/Laptop';
-import { useCart } from '../Carts&Orders/cartContext';
+import LaptopsData from '../../ShopData/Electronics/Laptop';
+import { useCart } from '../../Carts&Orders/cartContext';
 
 const Laptops = () => {
     const [selectedNames, setSelectedNames] = useState([]);

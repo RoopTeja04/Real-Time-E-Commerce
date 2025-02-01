@@ -16,10 +16,17 @@ import Gadgets from './MiniNav/Gadgets';
 import DailyDeals from './MainPage/DailyDeals';
 import CustomerService from './MiniNav/CustomerService';
 import Account from './MiniNav/Account';
-import Mobiles from './MiniNavSection/Mobiles.Jsx';
-import Laptops from './MiniNavSection/Laptops';
-import Airpods from './MiniNavSection/Airpods';
-import Tvs from './MiniNavSection/Tvs';
+import Mobiles from './MiniNavSection/EleNav/Mobiles';
+import Laptops from './MiniNavSection/EleNav/Laptops';
+import Airpods from './MiniNavSection/EleNav/Airpods';
+import Tvs from './MiniNavSection/EleNav/Tvs';
+import Shirts from './MiniNavSection/MenNav/Shirts';
+import Pants from './MiniNavSection/MenNav/Pants';
+import Shoes from './MiniNavSection/MenNav/Shoes';
+import Watches from './MiniNavSection/MenNav/Watches';
+import Sarees from './MiniNavSection/WomenNav/Sarees';
+import Kurtha from './MiniNavSection/WomenNav/Kurtha';
+import Slippers from './MiniNavSection/WomenNav/Slippers';
 
 const App = () => {
 
@@ -48,8 +55,19 @@ const App = () => {
               <Route path='airpods' element={<Airpods />} />    
               <Route path='tvs' element={<Tvs />} />
             </Route>
-            <Route path='/home/menswear' element={<MensWear />}/>
-            <Route path='/home/ladieswear' element={<LadiesWear />} />
+            <Route path='/home/menswear' element={<MensWear />}>
+              <Route index element={<Shirts />} />
+              <Route path='shirts' element={<Shirts />} />
+              <Route path='pants' element={<Pants />} />
+              <Route path='shoes' element={<Shoes />} />
+              <Route path='watches' element={<Watches />} />
+            </Route>
+            <Route path='/home/ladieswear' element={<LadiesWear />} >
+              <Route index element={<Sarees />} />
+              <Route path='sarees' element={<Sarees />} />
+              <Route path='kurthas' element={<Kurtha />} />
+              <Route path='slippers' element={<Slippers />} />
+            </Route>
             <Route path='/home/home-appliances' element={<HomeAppliances />} />
             <Route path='/home/home-furniture' element={<HomeFurniture />} />
             <Route path='/home/gadgets' element={<Gadgets />} />

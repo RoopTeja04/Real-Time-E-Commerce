@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import AirpodsData from '../ShopData/Electronics/AirPods';
-import { useCart } from '../Carts&Orders/cartContext';
+import AirpodsData from '../../ShopData/Electronics/AirPods';
+import { useCart } from '../../Carts&Orders/cartContext';
 
 const Airpods = () => { 
     
