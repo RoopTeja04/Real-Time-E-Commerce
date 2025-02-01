@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import Laptop from "../ShopData/Electronics/Laptop";
-import Speakers from "../ShopData/Electronics/Speakers";
+import Speakers from "../ShopData/Gadgets/Speakers";
 import Tvs from "../ShopData/Electronics/Tvs";
-import Watches from "../ShopData/Electronics/Watches";
-import AirPods from "../ShopData/Gadgets/AirPods";
-import Mobile from "../ShopData/Gadgets/Mobile";
+import Watches from "../ShopData/Gadgets/Watches";
+import AirPods from "../ShopData/Electronics/AirPods";
+import Mobile from "../ShopData/Electronics/Mobile";
 import AirConditioners from "../ShopData/HomeAppliances/Air Conditioners";
 import Microwaves from "../ShopData/HomeAppliances/Microwaves";
 import Refrigerators from "../ShopData/HomeAppliances/Refrigerators";

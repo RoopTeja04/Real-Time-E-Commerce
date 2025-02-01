@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import MobilesData from "../ShopData/Gadgets/Mobile";
+import MobilesData from "../ShopData/Electronics/Mobile";
 import { useCart } from "../Carts&Orders/cartContext";
 
 const Mobiles = () => {
@@ -176,25 +176,16 @@ const Mobiles = () => {
             <span className="text-base tracking-wide pl-1" >Asus</span>
           </label>
         </div>
-
         <p className="text-lg font-semibold tracking-wide pt-4 pb-2">
           Price Range
         </p>
         <label>
           <input
             type="checkbox"
-            value="10000 to 25000"
+            value="75000 to 100000"
             onChange={(e) => handleRangeChange(e.target.value)}
           />
-          <span className="text-base tracking-wide pl-1">₹ 10,000 to ₹ 25,000</span>
-        </label>
-        <label>
-          <input
-            type="checkbox"
-            value="25000 to 50000"
-            onChange={(e) => handleRangeChange(e.target.value)}
-          />
-          <span className="text-base tracking-wide pl-1">₹ 25,000 to ₹ 50,000</span>
+          <span className="text-base tracking-wide pl-1">₹ 75,000 to ₹ 1,00,000</span>
         </label>
         <label>
           <input
@@ -207,12 +198,19 @@ const Mobiles = () => {
         <label>
           <input
             type="checkbox"
-            value="75000 to 100000"
+            value="25000 to 50000"
             onChange={(e) => handleRangeChange(e.target.value)}
           />
-          <span className="text-base tracking-wide pl-1">₹ 75,000 to ₹ 1,00,000</span>
+          <span className="text-base tracking-wide pl-1">₹ 25,000 to ₹ 50,000</span>
         </label>
-
+        <label>
+          <input
+            type="checkbox"
+            value="10000 to 25000"
+            onChange={(e) => handleRangeChange(e.target.value)}
+          />
+          <span className="text-base tracking-wide pl-1">₹ 10,000 to ₹ 25,000</span>
+        </label>
         <p className="text-lg font-semibold tracking-wide pt-4 pb-2">
           Star Rating
         </p>
