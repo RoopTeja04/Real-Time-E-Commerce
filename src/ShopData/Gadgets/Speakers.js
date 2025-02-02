@@ -7,7 +7,7 @@ const HomeTheaters = [
       audio: "Dolby Digital 2.1",
       woofers: "Subwoofer: 200W",
       features: ["Bluetooth", "Wireless Subwoofer", "Smartphone App Control"],
-      rating: 4.5,
+      starRating: 4.5,
     },
     {
       id: 2,
@@ -17,7 +17,7 @@ const HomeTheaters = [
       audio: "Dolby Atmos, DTS:X",
       woofers: "Wireless Subwoofer: 8”",
       features: ["Q-Symphony", "Wi-Fi", "Alexa Built-in"],
-      rating: 4.8,
+      starRating: 4.8,
     },
     {
       id: 3,
@@ -27,7 +27,7 @@ const HomeTheaters = [
       audio: "Dolby Digital 5.1, DTS",
       woofers: "Built-in Subwoofer",
       features: ["Voice Control", "Wi-Fi & Bluetooth", "Amazon Alexa"],
-      rating: 4.7,
+      starRating: 4.7,
     },
     {
       id: 4,
@@ -37,7 +37,7 @@ const HomeTheaters = [
       audio: "Dolby Atmos, DTS:X",
       woofers: "Rear Speakers with Subwoofer: 7.1.4 Channel",
       features: ["Google Assistant", "Wi-Fi", "4K Pass-Through"],
-      rating: 4.6,
+      starRating: 4.6,
     },
     {
       id: 5,
@@ -47,7 +47,7 @@ const HomeTheaters = [
       audio: "Dolby Atmos, DTS:X",
       woofers: "Wireless Subwoofer: 10”",
       features: ["Detachable Speakers", "Wi-Fi", "AirPlay 2"],
-      rating: 4.7,
+      starRating: 4.7,
     },
     {
       id: 6,
@@ -57,7 +57,7 @@ const HomeTheaters = [
       audio: "Dolby Atmos",
       woofers: "Built-in Subwoofer",
       features: ["Voice Control", "Wi-Fi", "Apple AirPlay 2"],
-      rating: 4.9,
+      starRating: 4.9,
     },
     {
       id: 7,
@@ -67,7 +67,7 @@ const HomeTheaters = [
       audio: "Dolby TrueHD, DTS-HD Master Audio",
       woofers: "8” Subwoofer",
       features: ["4K Ultra HD", "Bluetooth", "Smart Streaming"],
-      rating: 4.4,
+      starRating: 4.4,
     },
     {
       id: 8,
@@ -77,7 +77,7 @@ const HomeTheaters = [
       audio: "Dolby Atmos, DTS:X",
       woofers: "Wireless Subwoofer: 10”",
       features: ["Voice Assistant", "Wi-Fi", "Chromecast Built-in"],
-      rating: 4.5,
+      starRating: 4.5,
     },
     {
       id: 9,
@@ -87,7 +87,7 @@ const HomeTheaters = [
       audio: "Dolby Atmos, DTS:X",
       woofers: "2 Subwoofers",
       features: ["Zone 2/Zone 3 Output", "Wi-Fi", "AirPlay 2"],
-      rating: 4.8,
+      starRating: 4.8,
     },
     {
       id: 10,
@@ -97,7 +97,7 @@ const HomeTheaters = [
       audio: "Dolby Atmos, DTS:X, Auro-3D",
       woofers: "Dual Subwoofers: 8”",
       features: ["9.2 Channel Output", "Wi-Fi", "Bluetooth"],
-      rating: 4.7,
+      starRating: 4.7,
     },
     {
       id: 11,
@@ -107,7 +107,7 @@ const HomeTheaters = [
       audio: "Dolby TrueHD, DTS-HD Master Audio",
       woofers: "8” Subwoofer",
       features: ["4K Ultra HD", "Bluetooth", "Wi-Fi"],
-      rating: 4.5,
+      starRating: 4.5,
     },
     {
       id: 12,
@@ -117,7 +117,7 @@ const HomeTheaters = [
       audio: "Dolby Atmos, DTS:X",
       woofers: "Subwoofer: 10”",
       features: ["Wireless Subwoofer", "Smartphone App Control", "Compact Design"],
-      rating: 4.6,
+      starRating: 4.6,
     },
     {
       id: 13,
@@ -127,7 +127,7 @@ const HomeTheaters = [
       audio: "Dolby Atmos, DTS:X, Auro-3D",
       woofers: "Dual Subwoofers: 10”",
       features: ["8K Ultra HD", "Wi-Fi", "Bluetooth"],
-      rating: 4.9,
+      starRating: 4.9,
     },
     {
       id: 14,
@@ -137,7 +137,7 @@ const HomeTheaters = [
       audio: "Dolby TrueHD, DTS-HD Master Audio",
       woofers: "Acoustic Mass Module Subwoofer",
       features: ["Wi-Fi", "Bluetooth", "Voice Control"],
-      rating: 4.7,
+      starRating: 4.7,
     },
     {
       id: 15,
@@ -147,7 +147,7 @@ const HomeTheaters = [
       audio: "Dolby Atmos, DTS:X",
       woofers: "Wireless Subwoofer: 8”",
       features: ["Q-Symphony", "Wi-Fi", "Alexa Built-in"],
-      rating: 4.6,
+      starRating: 4.6,
     }
 ];
 

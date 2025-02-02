@@ -8,7 +8,7 @@ const MensWear = () => {
         <Link to="shirts">Shirts's</Link>
         <Link to="pants">Pant's</Link>
         <Link to="shoes">Shoes's</Link>
-        <Link to="watches">Watch's</Link>
+        
       </div>
       <Outlet />
     </>

@@ -23,7 +23,7 @@ import Tvs from './MiniNavSection/EleNav/Tvs';
 import Shirts from './MiniNavSection/MenNav/Shirts';
 import Pants from './MiniNavSection/MenNav/Pants';
 import Shoes from './MiniNavSection/MenNav/Shoes';
-import Watches from './MiniNavSection/MenNav/Watches';
+import Watches from './MiniNavSection/Gadgets/Watches';
 import Sarees from './MiniNavSection/WomenNav/Sarees';
 import Kurtha from './MiniNavSection/WomenNav/Kurtha';
 import Slippers from './MiniNavSection/WomenNav/Slippers';
@@ -33,6 +33,14 @@ import Microwaves from './MiniNavSection/HomeAppliances/Microwaves';
 import Refrigerators from './MiniNavSection/HomeAppliances/Refrigerators';
 import ST from './MiniNavSection/HomeAppliances/ST';
 import WahingMachines from './MiniNavSection/HomeAppliances/WahingMachines';
+import BeddingMattresses from './MiniNavSection/HomeFurniture/BeddingMattresses';
+import OutDoorUmbrellas from './MiniNavSection/HomeFurniture/OutDoorUmbrellas';
+import SofasCouches from './MiniNavSection/HomeFurniture/SofasCouches';
+import WardeobesClosets from './MiniNavSection/HomeFurniture/WardeobesClosets';
+import Speakers from './MiniNavSection/Gadgets/Speakers';
+import CricketBats from './MiniNavSection/Sports/CricketBats';
+import Jersey from './MiniNavSection/Sports/Jersey';
+import SportShoes from './MiniNavSection/Sports/SportShoes';
 
 const App = () => {
 
@@ -66,7 +74,6 @@ const App = () => {
               <Route path='shirts' element={<Shirts />} />
               <Route path='pants' element={<Pants />} />
               <Route path='shoes' element={<Shoes />} />
-              <Route path='watches' element={<Watches />} />
             </Route>
             <Route path='/home/ladieswear' element={<LadiesWear />} >
               <Route index element={<Sarees />} />
@@ -82,9 +89,24 @@ const App = () => {
               <Route path='st' element={<ST />} />
               <Route path='washingmachines' element={<WahingMachines />} /> 
             </Route>
-            <Route path='/home/home-furniture' element={<HomeFurniture />} />
-            <Route path='/home/gadgets' element={<Gadgets />} />
-            <Route path='/home/sports' element={<Sports />} />
+            <Route path='/home/home-furniture' element={<HomeFurniture />} >
+              <Route index element={<BeddingMattresses />} />
+              <Route path="beddingMattresses" element={<BeddingMattresses />} />
+              <Route path="outdoorUmbrellas" element={<OutDoorUmbrellas />} />
+              <Route path="sofasCouches" element={<SofasCouches />} />
+              <Route path='wardeobesClosets' element={<WardeobesClosets />} /> 
+            </Route>
+            <Route path='/home/gadgets' element={<Gadgets />} >
+              <Route index element={<Speakers />} />
+              <Route path='speakers' element={<Speakers />} />
+              <Route path='watches' element={<Watches />} />
+            </Route>
+            <Route path='/home/sports' element={<Sports />} >
+              <Route index element={<CricketBats />} />
+              <Route path='cricketbats' element={<CricketBats />} />
+              <Route path='jersey' element={<Jersey />} />
+              <Route path='sportshoes' element={<SportShoes />} />
+            </Route>
             <Route path='/home/daily-deals' element={<DailyDeals />} />
             <Route path='/home/customer-service' element={<CustomerService />} />
             <Route path='/home/account' element={<Account />} />
