@@ -10,7 +10,7 @@ const sarees = [
         pattern: "Woven Design",
         blousePiece: "Yes",
         length: "5.5 meters",
-        rating: 4.5
+        starRating: 4.5
     },
     {
         id: 2,
@@ -23,7 +23,7 @@ const sarees = [
         pattern: "Woven Zari",
         blousePiece: "Yes",
         length: "6 meters",
-        rating: 4.8
+        starRating: 4.8
     },
     {
         id: 3,
@@ -36,7 +36,7 @@ const sarees = [
         pattern: "Solid",
         blousePiece: "No",
         length: "5.5 meters",
-        rating: 4.2
+        starRating: 4.2
     },
     {
         id: 4,
@@ -49,7 +49,7 @@ const sarees = [
         pattern: "Floral Print",
         blousePiece: "Yes",
         length: "5.5 meters",
-        rating: 4.0
+        starRating: 4.0
     },
     {
         id: 5,
@@ -62,7 +62,7 @@ const sarees = [
         pattern: "Embroidered",
         blousePiece: "Yes",
         length: "6 meters",
-        rating: 4.3
+        starRating: 4.3
     },
     {
         id: 6,
@@ -75,7 +75,7 @@ const sarees = [
         pattern: "Woven Design",
         blousePiece: "Yes",
         length: "5.5 meters",
-        rating: 4.9
+        starRating: 4.9
     },
     {
         id: 7,
@@ -88,7 +88,7 @@ const sarees = [
         pattern: "Printed",
         blousePiece: "Yes",
         length: "6 meters",
-        rating: 4.4
+        starRating: 4.4
     },
     {
         id: 8,
@@ -101,7 +101,7 @@ const sarees = [
         pattern: "Bandhani Print",
         blousePiece: "Yes",
         length: "5.5 meters",
-        rating: 4.6
+        starRating: 4.6
     },
     {
         id: 9,
@@ -114,7 +114,7 @@ const sarees = [
         pattern: "Printed",
         blousePiece: "Yes",
         length: "5.5 meters",
-        rating: 4.2
+        starRating: 4.2
     },
     {
         id: 10,
@@ -127,7 +127,7 @@ const sarees = [
         pattern: "Solid",
         blousePiece: "Yes",
         length: "6 meters",
-        rating: 4.1
+        starRating: 4.1
     },
     {
         id: 11,
@@ -140,7 +140,7 @@ const sarees = [
         pattern: "Solid",
         blousePiece: "No",
         length: "5.5 meters",
-        rating: 4.3
+        starRating: 4.3
     },
     {
         id: 12,
@@ -153,7 +153,7 @@ const sarees = [
         pattern: "Woven Zari",
         blousePiece: "Yes",
         length: "5.5 meters",
-        rating: 4.7
+        starRating: 4.7
     },
     {
         id: 13,
@@ -166,7 +166,7 @@ const sarees = [
         pattern: "Embroidery",
         blousePiece: "Yes",
         length: "6 meters",
-        rating: 4.4
+        starRating: 4.4
     },
     {
         id: 14,
@@ -179,7 +179,7 @@ const sarees = [
         pattern: "Checkered",
         blousePiece: "No",
         length: "5.5 meters",
-        rating: 4.0
+        starRating: 4.0
     },
     {
         id: 15,
@@ -192,7 +192,7 @@ const sarees = [
         pattern: "Woven Design",
         blousePiece: "Yes",
         length: "6 meters",
-        rating: 4.5
+        starRating: 4.5
     },
 ];
 

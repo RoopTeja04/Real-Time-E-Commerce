@@ -7,7 +7,7 @@ const shaversAndTrimmers = [
     price: 3500,
     type: "Trimmer",
     features: ["12 attachments", "Self-sharpening blades", "Lithium-ion battery"],
-    rating: 4.7,
+    starRating: 4.7,
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const shaversAndTrimmers = [
     price: 22000,
     type: "Shaver",
     features: ["5 shaving elements", "FlexMotionTec", "Wet & dry usage"],
-    rating: 4.8,
+    starRating: 4.8,
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const shaversAndTrimmers = [
     price: 12000,
     type: "Trimmer",
     features: ["Cordless", "X-taper Blade", "Quiet motor"],
-    rating: 4.5,
+    starRating: 4.5,
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ const shaversAndTrimmers = [
     price: 2500,
     type: "Beard Trimmer",
     features: ["20 length settings", "Self-sharpening blades", "Washable design"],
-    rating: 4.6,
+    starRating: 4.6,
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ const shaversAndTrimmers = [
     price: 3500,
     type: "Beard Trimmer",
     features: ["Titanium-coated blades", "3 comb attachments", "Cordless operation"],
-    rating: 4.3,
+    starRating: 4.3,
   },
   {
     id: 6,
@@ -57,7 +57,7 @@ const shaversAndTrimmers = [
     price: 8000,
     type: "Clipper",
     features: ["Precision fade blade", "Powerful motor", "Durable housing"],
-    rating: 4.6,
+    starRating: 4.6,
   },
   {
     id: 7,
@@ -67,7 +67,7 @@ const shaversAndTrimmers = [
     price: 1800,
     type: "Beard Trimmer",
     features: ["10 length settings", "Battery-powered", "Easy to clean"],
-    rating: 4.4,
+    starRating: 4.4,
   },
   {
     id: 8,
@@ -77,7 +77,7 @@ const shaversAndTrimmers = [
     price: 6000,
     type: "Shaver",
     features: ["3 pressure-sensitive shaving elements", "Wet & dry shaver", "2x SensoFoil"],
-    rating: 4.5,
+    starRating: 4.5,
   },
   {
     id: 9,
@@ -87,7 +87,7 @@ const shaversAndTrimmers = [
     price: 9000,
     type: "Shaver",
     features: ["3-blade shaving system", "Wet & dry use", "Pop-up trimmer"],
-    rating: 4.4,
+    starRating: 4.4,
   },
   {
     id: 10,
@@ -97,7 +97,7 @@ const shaversAndTrimmers = [
     price: 6000,
     type: "Trimmer",
     features: ["Close-cutting blade", "High-speed motor", "Corded operation"],
-    rating: 4.7,
+    starRating: 4.7,
   },
 ];
 

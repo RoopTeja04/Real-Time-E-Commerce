@@ -9,7 +9,7 @@ const kurtas = [
         pattern: "Printed",
         length: "Calf Length",
         sleeve: "3/4th Sleeve",
-        rating: 4.5
+        starRating: 4.5
     },
     {
         id: 2,
@@ -21,7 +21,7 @@ const kurtas = [
         pattern: "Solid",
         length: "Knee Length",
         sleeve: "Short Sleeve",
-        rating: 4.3
+        starRating: 4.3
     },
     {
         id: 3,
@@ -33,7 +33,7 @@ const kurtas = [
         pattern: "Floral Print",
         length: "Ankle Length",
         sleeve: "3/4th Sleeve",
-        rating: 4.4
+        starRating: 4.4
     },
     {
         id: 4,
@@ -45,7 +45,7 @@ const kurtas = [
         pattern: "Embroidered",
         length: "Floor Length",
         sleeve: "Full Sleeve",
-        rating: 4.7
+        starRating: 4.7
     },
     {
         id: 5,
@@ -57,7 +57,7 @@ const kurtas = [
         pattern: "Abstract Print",
         length: "Knee Length",
         sleeve: "Bell Sleeve",
-        rating: 4.2
+        starRating: 4.2
     },
     {
         id: 6,
@@ -69,7 +69,7 @@ const kurtas = [
         pattern: "Embellished",
         length: "Calf Length",
         sleeve: "Sleeveless",
-        rating: 4.6
+        starRating: 4.6
     },
     {
         id: 7,
@@ -81,7 +81,7 @@ const kurtas = [
         pattern: "Printed",
         length: "Ankle Length",
         sleeve: "3/4th Sleeve",
-        rating: 4.4
+        starRating: 4.4
     },
     {
         id: 8,
@@ -93,7 +93,7 @@ const kurtas = [
         pattern: "Solid",
         length: "Calf Length",
         sleeve: "Full Sleeve",
-        rating: 4.5
+        starRating: 4.5
     },
     {
         id: 9,
@@ -105,7 +105,7 @@ const kurtas = [
         pattern: "Printed",
         length: "Floor Length",
         sleeve: "3/4th Sleeve",
-        rating: 4.3
+        starRating: 4.3
     },
     {
         id: 10,
@@ -117,7 +117,7 @@ const kurtas = [
         pattern: "Geometric",
         length: "High-Low",
         sleeve: "Half Sleeve",
-        rating: 4.2
+        starRating: 4.2
     },
     {
         id: 11,
@@ -129,7 +129,7 @@ const kurtas = [
         pattern: "Embroidered",
         length: "Calf Length",
         sleeve: "3/4th Sleeve",
-        rating: 4.4
+        starRating: 4.4
     },
     {
         id: 12,
@@ -141,7 +141,7 @@ const kurtas = [
         pattern: "Printed",
         length: "Calf Length",
         sleeve: "Full Sleeve",
-        rating: 4.7
+        starRating: 4.7
     },
     {
         id: 13,
@@ -153,7 +153,7 @@ const kurtas = [
         pattern: "Embroidered",
         length: "Floor Length",
         sleeve: "Cape Sleeve",
-        rating: 4.8
+        starRating: 4.8
     },
     {
         id: 14,
@@ -165,7 +165,7 @@ const kurtas = [
         pattern: "Solid",
         length: "High-Low",
         sleeve: "3/4th Sleeve",
-        rating: 4.3
+        starRating: 4.3
     },
     {
         id: 15,
@@ -177,7 +177,7 @@ const kurtas = [
         pattern: "Printed",
         length: "Waist Length",
         sleeve: "Half Sleeve",
-        rating: 4.5
+        starRating: 4.5
     },
 ];
 

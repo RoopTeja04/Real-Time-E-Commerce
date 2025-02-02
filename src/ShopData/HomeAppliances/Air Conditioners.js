@@ -7,7 +7,7 @@ const airConditioners = [
       capacity: "1.5 Ton",
       energyRating: "5 Star",
       features: ["Dual Inverter", "Fast Cooling", "Anti-Bacterial Filter"],
-      rating: 4.7,
+      starRating: 4.7,
     },
     {
       id: 2,
@@ -17,7 +17,7 @@ const airConditioners = [
       capacity: "1.5 Ton",
       energyRating: "3 Star",
       features: ["Digital Inverter", "Anti-Bacterial Coating", "Eco Mode"],
-      rating: 4.4,
+      starRating: 4.4,
     },
     {
       id: 3,
@@ -27,7 +27,7 @@ const airConditioners = [
       capacity: "1.8 Ton",
       energyRating: "5 Star",
       features: ["Neo Swing Compressor", "Titanium Apatite Photocatalytic Filter", "Econo Mode"],
-      rating: 4.6,
+      starRating: 4.6,
     },
     {
       id: 4,
@@ -37,7 +37,7 @@ const airConditioners = [
       capacity: "1.5 Ton",
       energyRating: "4 Star",
       features: ["Turbo Mode", "Air Purifier", "Stabilizer Free"],
-      rating: 4.5,
+      starRating: 4.5,
     },
     {
       id: 5,
@@ -47,7 +47,7 @@ const airConditioners = [
       capacity: "1 Ton",
       energyRating: "3 Star",
       features: ["Active Carbon Filter", "Self Clean", "Dry Mode"],
-      rating: 4.3,
+      starRating: 4.3,
     },
 ];
 

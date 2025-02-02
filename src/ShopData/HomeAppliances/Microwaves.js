@@ -7,7 +7,7 @@ const MicroWaves = [
       capacity: "23L",
       power: "800W",
       features: ["Ceramic Enamel", "Tact Dial", "Child Lock"],
-      rating: 4.5,
+      starRating: 4.5,
     },
     {
       id: 2,
@@ -17,7 +17,7 @@ const MicroWaves = [
       capacity: "28L",
       power: "1000W",
       features: ["Smart Inverter", "Auto Cook", "Curd Making"],
-      rating: 4.6,
+      starRating: 4.6,
     },
     {
       id: 3,
@@ -27,7 +27,7 @@ const MicroWaves = [
       capacity: "20L",
       power: "800W",
       features: ["Auto Defrost", "Steam Clean", "Child Lock"],
-      rating: 4.3,
+      starRating: 4.3,
     },
     {
       id: 4,
@@ -37,7 +37,7 @@ const MicroWaves = [
       capacity: "27L",
       power: "1000W",
       features: ["Convection", "Auto Reheat", "Touch Control"],
-      rating: 4.7,
+      starRating: 4.7,
     },
     {
       id: 5,
@@ -47,7 +47,7 @@ const MicroWaves = [
       capacity: "20L",
       power: "800W",
       features: ["Convection", "Rotisserie", "Auto Cook Menus"],
-      rating: 4.2,
+      starRating: 4.2,
     },
     {
       id: 6,
@@ -57,7 +57,7 @@ const MicroWaves = [
       capacity: "28L",
       power: "1400W",
       features: ["Grill Function", "Tact Dial", "Fermentation Function"],
-      rating: 4.5,
+      starRating: 4.5,
     },
     {
       id: 7,
@@ -67,7 +67,7 @@ const MicroWaves = [
       capacity: "17L",
       power: "700W",
       features: ["Mechanical Control", "Simple Operation", "Rotary Dial"],
-      rating: 4.0,
+      starRating: 4.0,
     },
     {
       id: 8,
@@ -77,7 +77,7 @@ const MicroWaves = [
       capacity: "20L",
       power: "800W",
       features: ["Multi-Stage Cooking", "Steam Cooking", "Auto Reheat"],
-      rating: 4.4,
+      starRating: 4.4,
     },
     {
       id: 9,
@@ -87,7 +87,7 @@ const MicroWaves = [
       capacity: "20L",
       power: "800W",
       features: ["Convection", "Auto Cook", "Defrost"],
-      rating: 4.6,
+      starRating: 4.6,
     },
     {
       id: 10,
@@ -97,7 +97,7 @@ const MicroWaves = [
       capacity: "32L",
       power: "1000W",
       features: ["Auto Cook Menus", "Healthy Fry", "Child Lock"],
-      rating: 4.6,
+      starRating: 4.6,
     }
 ];
 

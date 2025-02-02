@@ -1,9 +1,8 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { useCart } from '../../Carts&Orders/cartContext';
-import ShirtsData from '../../ShopData/MensWear/Shirts';
+import airConditionersData from '../../ShopData/HomeAppliances/Air Conditioners';
 
-const Shirts = () => {
-
+const AirConditioners = () => {
     const [ selectedNames, setSelectedNames ] = useState([]);
     const [ selectedRanges, setSelectedRanges ] = useState([]); 
     const [ selectedRating, setSelectedRating ] = useState([]);
@@ -36,7 +35,7 @@ const Shirts = () => {
 
 
 
-    const filteredData = ShirtsData.filter((data) => {
+    const filteredData = airConditionersData.filter((data) => {
 
         const matchName = 
             selectedNames.length === 0 ||
@@ -66,86 +65,41 @@ const Shirts = () => {
             <div className="min-h-screen flex flex-row w-full">
                 <div className="flex flex-col border-r-2 w-1/6 px-4 py-4">
                 <p className="text-lg font-semibold">Product Name</p>
-                    <label>
-                        <input type='checkbox' value="Allen Solly" onChange={(e) => handleNameChange(e.target.value)} /> 
-                        <span className="text-base tracking-wide pl-1">Allen Solly</span>
-                    </label>
-                    <label>
-                        <input type='checkbox' value="Peter England" onChange={(e) => handleNameChange(e.target.value)} /> 
-                        <span className="text-base tracking-wide pl-1">Peter England</span>
-                    </label>
-                    <label>
-                        <input type='checkbox' value="Van Heusen" onChange={(e) => handleNameChange(e.target.value)} /> 
-                        <span className="text-base tracking-wide pl-1">Van Heusen</span>
-                    </label>
-                    <label>
-                        <input type='checkbox' value="Levi's" onChange={(e) => handleNameChange(e.target.value)} /> 
-                        <span className="text-base tracking-wide pl-1">Levi's</span>
-                    </label>
-                    <label>
-                        <input type='checkbox' value="Benetton" onChange={(e) => handleNameChange(e.target.value)} /> 
-                        <span className="text-base tracking-wide pl-1">Benetton</span>
-                    </label>
-                    <label>
-                        <input type='checkbox' value="H&M" onChange={(e) => handleNameChange(e.target.value)} /> 
-                        <span className="text-base tracking-wide pl-1">H&M</span>
-                    </label>
-                    <label>
-                        <input type='checkbox' value="Roadster" onChange={(e) => handleNameChange(e.target.value)} /> 
-                        <span className="text-base tracking-wide pl-1">Roadster</span>
-                    </label>
-                    <label>
-                        <input type='checkbox' value="Fabindia" onChange={(e) => handleNameChange(e.target.value)} /> 
-                        <span className="text-base tracking-wide pl-1">Fabindia</span>
-                    </label>
-                    <label>
-                        <input type='checkbox' value="Tommy Hilfiger" onChange={(e) => handleNameChange(e.target.value)} /> 
-                        <span className="text-base tracking-wide pl-1">Tommy Hilfiger</span>
-                    </label>
-                    <label>
-                        <input type='checkbox' value="Mango" onChange={(e) => handleNameChange(e.target.value)} /> 
-                        <span className="text-base tracking-wide pl-1">Mango</span>
-                    </label>
-                    <label>
-                        <input type='checkbox' value="Puma" onChange={(e) => handleNameChange(e.target.value)} /> 
-                        <span className="text-base tracking-wide pl-1">Puma</span>
-                    </label>
-                    <label>
-                        <input type='checkbox' value="Wrangler" onChange={(e) => handleNameChange(e.target.value)} /> 
-                        <span className="text-base tracking-wide pl-1">Wrangler</span>
-                    </label>
-                    <label>
-                        <input type='checkbox' value="Biba" onChange={(e) => handleNameChange(e.target.value)} /> 
-                        <span className="text-base tracking-wide pl-1">Biba</span>
-                    </label>
-                    <label>
-                        <input type='checkbox' value="Zodiac" onChange={(e) => handleNameChange(e.target.value)} /> 
-                        <span className="text-base tracking-wide pl-1">Zodiac</span>
-                    </label>
-                    <label>
-                        <input type='checkbox' value="Club Factory" onChange={(e) => handleNameChange(e.target.value)} /> 
-                        <span className="text-base tracking-wide pl-1">Club Factory</span>
-                    </label>
+                <label>
+                    <input type='checkbox' value="LG" onChange={(e) => handleNameChange(e.target.value)} /> 
+                    <span className="text-base tracking-wide pl-1">LG</span>
+                </label>
+                <label>
+                    <input type='checkbox' value="Samsung" onChange={(e) => handleNameChange(e.target.value)} /> 
+                    <span className="text-base tracking-wide pl-1">Samsung</span>
+                </label>
+                <label>
+                    <input type='checkbox' value="Daikin" onChange={(e) => handleNameChange(e.target.value)} /> 
+                    <span className="text-base tracking-wide pl-1">Daikin</span>
+                </label>
+                <label>
+                    <input type='checkbox' value="Voltas" onChange={(e) => handleNameChange(e.target.value)} /> 
+                    <span className="text-base tracking-wide pl-1">Voltas</span>
+                </label>
+                <label>
+                    <input type='checkbox' value="Blue Star" onChange={(e) => handleNameChange(e.target.value)} /> 
+                    <span className="text-base tracking-wide pl-1">Blue Star</span>
+                </label>
                     <p className="text-lg font-semibold tracking-wide pt-4 pb-2">
                         Price Range
                     </p>
                     <label>
-                        <input type='checkbox' value="2500 to 3000" onChange={(e) => handleRangeChange(e.target.value)} /> 
-                        <span className="text-base tracking-wide pl-1">₹2,500 to ₹3,000</span>
+                        <input type='checkbox' value="40000 to 50000" onChange={(e) => handleRangeChange(e.target.value)} /> 
+                        <span className="text-base tracking-wide pl-1">₹40,000 to ₹50,000</span>
                     </label>
                     <label>
-                        <input type='checkbox' value="2000 to 2500" onChange={(e) => handleRangeChange(e.target.value)} /> 
-                        <span className="text-base tracking-wide pl-1">₹2,000 to ₹2,500</span>
+                        <input type='checkbox' value="30000 to 40000" onChange={(e) => handleRangeChange(e.target.value)} /> 
+                        <span className="text-base tracking-wide pl-1">₹30,000 to ₹40,000</span>
                     </label>
                     <label>
-                        <input type='checkbox' value="1500 to 2000" onChange={(e) => handleRangeChange(e.target.value)} /> 
-                        <span className="text-base tracking-wide pl-1">₹1,500 to ₹2,000</span>
+                        <input type='checkbox' value="20000 to 30000" onChange={(e) => handleRangeChange(e.target.value)} /> 
+                        <span className="text-base tracking-wide pl-1">₹20,000 to ₹30,000</span>
                     </label>
-                    <label>
-                        <input type='checkbox' value="1000 to 1500" onChange={(e) => handleRangeChange(e.target.value)} /> 
-                        <span className="text-base tracking-wide pl-1">₹1,000 to ₹1,500</span>
-                    </label>
-
                     <p className="text-lg font-semibold tracking-wide pt-4 pb-2">
                         Star Rating
                     </p>
@@ -161,7 +115,6 @@ const Shirts = () => {
                         <input type='checkbox' value="3.5 to 4" onChange={(e) => handleStarRating(e.target.value)} /> 
                         <span className="text-base tracking-wide pl-1">3.5 to 4</span>
                     </label>
-
                 </div>
                 <div className="flex flex-col px-8 py-8 w-full">
                     {filteredData.length > 0 ? (
@@ -171,7 +124,7 @@ const Shirts = () => {
                                     <div className="border rounded-lg p-6 flex flex-col items-center" key={item.id}>
                                         <img className="h-48 rounded-lg" src={item.imageURL} alt={item.name} />
                                         <div className="flex flex-col items-center mt-4 border-t-2 outline-offset-8 w-full">
-                                            <p className="mt-2 font-semibold text-lg tracking-wide">{item.shortName}</p>
+                                            <p className="mt-2 font-semibold text-lg tracking-wide">{item.name}</p>
                                             <span className="mt-1 text-lg tracking-wider">₹ {item.price.toLocaleString("hi-IN")} /-</span>
                                         </div> 
                                         <div className="flex flex-col space-y-3 mt-4">
@@ -198,4 +151,4 @@ const Shirts = () => {
     )
 }
 
-export default Shirts
+export default AirConditioners

@@ -7,7 +7,7 @@ const sofasAndCouches = [
     price: 24999,
     type: "Sofa",
     features: ["Removable cushion covers", "Comfortable seating", "Classic design"],
-    rating: 4.6,
+    starRating: 4.6,
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const sofasAndCouches = [
     price: 34999,
     type: "Sofa",
     features: ["Soft fabric upholstery", "Modern design", "Durable frame"],
-    rating: 4.5,
+    starRating: 4.5,
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const sofasAndCouches = [
     price: 8999,
     type: "Sofa",
     features: ["Soft cushions", "Easy to assemble", "Compact design"],
-    rating: 4.4,
+    starRating: 4.4,
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ const sofasAndCouches = [
     price: 23999,
     type: "Sofa",
     features: ["High-quality fabric", "Stylish design", "Comfortable seat depth"],
-    rating: 4.7,
+    starRating: 4.7,
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ const sofasAndCouches = [
     price: 12999,
     type: "Couch",
     features: ["Sleek and modern design", "Wooden legs", "Sturdy construction"],
-    rating: 4.3,
+    starRating: 4.3,
   },
   {
     id: 6,
@@ -57,7 +57,7 @@ const sofasAndCouches = [
     price: 13999,
     type: "Sofa",
     features: ["Soft cushioned seating", "Stylish wooden frame", "Contemporary look"],
-    rating: 4.5,
+    starRating: 4.5,
   },
   {
     id: 7,
@@ -67,7 +67,7 @@ const sofasAndCouches = [
     price: 15999,
     type: "Sofa",
     features: ["Comfortable upholstery", "Sleek arms", "Soft cushions"],
-    rating: 4.4,
+    starRating: 4.4,
   },
   {
     id: 8,
@@ -77,7 +77,7 @@ const sofasAndCouches = [
     price: 28999,
     type: "Sofa",
     features: ["L-shaped design", "Ideal for larger spaces", "Spacious seating"],
-    rating: 4.7,
+    starRating: 4.7,
   },
   {
     id: 9,
@@ -87,7 +87,7 @@ const sofasAndCouches = [
     price: 22999,
     type: "Couch",
     features: ["Premium wood finish", "Stylish look", "Comfortable cushion design"],
-    rating: 4.6,
+    starRating: 4.6,
   },
   {
     id: 10,
@@ -97,7 +97,7 @@ const sofasAndCouches = [
     price: 44999,
     type: "Sofa",
     features: ["Plush cushions", "Soft fabric", "Durable wooden legs"],
-    rating: 4.8,
+    starRating: 4.8,
   }
 ];
 

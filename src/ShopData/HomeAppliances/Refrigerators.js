@@ -7,7 +7,7 @@ const Refrigerators = [
     capacity: "253L",
     energyRating: "4 Stars",
     features: ["Digital Inverter", "Cool Pack", "Moist Fresh Zone"],
-    rating: 4.5,
+    starRating: 4.5,
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const Refrigerators = [
     capacity: "215L",
     energyRating: "3 Stars",
     features: ["Fast Cooling", "Stabilizer Free Operation", "Door Cooling"],
-    rating: 4.4,
+    starRating: 4.4,
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const Refrigerators = [
     capacity: "265L",
     energyRating: "3 Stars",
     features: ["MicroBlock Technology", "FlexiVents", "IntelliSense Inverter"],
-    rating: 4.6,
+    starRating: 4.6,
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ const Refrigerators = [
     capacity: "320L",
     energyRating: "3 Stars",
     features: ["Inverter Compressor", "Moisture Fresh", "Big Bottle Storage"],
-    rating: 4.3,
+    starRating: 4.3,
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ const Refrigerators = [
     capacity: "324L",
     energyRating: "2 Stars",
     features: ["Power Cool", "Twin Cooling Plus", "No Frost"],
-    rating: 4.5,
+    starRating: 4.5,
   },
   {
     id: 6,
@@ -57,7 +57,7 @@ const Refrigerators = [
     capacity: "360L",
     energyRating: "3 Stars",
     features: ["Smart Inverter Compressor", "Fresh 0 Zone", "IceBeam Door Cooling"],
-    rating: 4.7,
+    starRating: 4.7,
   },
   {
     id: 7,
@@ -67,7 +67,7 @@ const Refrigerators = [
     capacity: "192L",
     energyRating: "3 Stars",
     features: ["Inverter Compressor", "Chiller Tray", "Humidity Control"],
-    rating: 4.6,
+    starRating: 4.6,
   },
   {
     id: 8,
@@ -77,7 +77,7 @@ const Refrigerators = [
     capacity: "236L",
     energyRating: "3 Stars",
     features: ["Stabilizer Free Operation", "Chilled Water Compartment", "Energy Efficient"],
-    rating: 4.3,
+    starRating: 4.3,
   },
   {
     id: 9,
@@ -87,7 +87,7 @@ const Refrigerators = [
     capacity: "582L",
     energyRating: "2 Stars",
     features: ["Prime Fresh Freezing", "Ag Clean Technology", "Silver Ion Filter"],
-    rating: 4.4,
+    starRating: 4.4,
   },
   {
     id: 10,
@@ -97,7 +97,7 @@ const Refrigerators = [
     capacity: "258L",
     energyRating: "3 Stars",
     features: ["Moisture Fresh Technology", "Smart Cooling", "Inverter Compressor"],
-    rating: 4.5,
+    starRating: 4.5,
   },
   {
     id: 11,
@@ -107,7 +107,7 @@ const Refrigerators = [
     capacity: "235L",
     energyRating: "3 Stars",
     features: ["Freshness & Hygiene", "Humidity Control", "Stabilizer Free"],
-    rating: 4.2,
+    starRating: 4.2,
   },
   {
     id: 12,
@@ -117,7 +117,7 @@ const Refrigerators = [
     capacity: "334L",
     energyRating: "3 Stars",
     features: ["Twin Inverter Compressor", "Pouch Storage", "Deodorizer Filter"],
-    rating: 4.6,
+    starRating: 4.6,
   },
   {
     id: 13,
@@ -127,7 +127,7 @@ const Refrigerators = [
     capacity: "190L",
     energyRating: "2 Stars",
     features: ["Energy Efficient", "Silver Coated Shelf", "Compact Design"],
-    rating: 4.0,
+    starRating: 4.0,
   },
   {
     id: 14,
@@ -137,7 +137,7 @@ const Refrigerators = [
     capacity: "275L",
     energyRating: "3 Stars",
     features: ["Frost Free", "Inverter Compressor", "Fast Freezing"],
-    rating: 4.5,
+    starRating: 4.5,
   },
   {
     id: 15,
@@ -147,7 +147,7 @@ const Refrigerators = [
     capacity: "400L",
     energyRating: "3 Stars",
     features: ["6th Sense Technology", "Frost Free", "No Noise Compressor"],
-    rating: 4.6,
+    starRating: 4.6,
   }
 ];
 

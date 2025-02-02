@@ -8,7 +8,7 @@ const WashingMachines = [
     capacity: "6.5 kg",
     type: "Semi-Automatic",
     features: ["Rat Away Technology", "Turbo Drum", "Magic Filter"],
-    rating: 4.4,
+    starRating: 4.4,
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const WashingMachines = [
     capacity: "6.5 kg",
     type: "Fully Automatic",
     features: ["Quick Wash", "Diamond Drum", "Eco Bubble Technology"],
-    rating: 4.6,
+    starRating: 4.6,
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const WashingMachines = [
     capacity: "7 kg",
     type: "Fully Automatic",
     features: ["Hard Water Wash", "Sixth Sense Technology", "Zero Pressure Fill"],
-    rating: 4.5,
+    starRating: 4.5,
   },
   {
     id: 4,
@@ -41,7 +41,7 @@ const WashingMachines = [
     capacity: "7.5 kg",
     type: "Fully Automatic",
     features: ["ActiveWater Plus", "EcoSilence Drive", "SpeedPerfect"],
-    rating: 4.7,
+    starRating: 4.7,
   },
   {
     id: 5,
@@ -52,7 +52,7 @@ const WashingMachines = [
     capacity: "6.2 kg",
     type: "Fully Automatic",
     features: ["Fuzzy Logic", "5 Wash Programs", "Child Lock"],
-    rating: 4.3,
+    starRating: 4.3,
   },
   {
     id: 6,
@@ -63,7 +63,7 @@ const WashingMachines = [
     capacity: "8 kg",
     type: "Fully Automatic",
     features: ["Aqua Energie", "Auto Balance System", "Wash Programs for Tough Stains"],
-    rating: 4.6,
+    starRating: 4.6,
   },
   {
     id: 7,
@@ -74,7 +74,7 @@ const WashingMachines = [
     capacity: "6 kg",
     type: "Fully Automatic",
     features: ["Active Foam Wash", "Aqua Spin Rinse", "Soft Touch"],
-    rating: 4.4,
+    starRating: 4.4,
   },
   {
     id: 8,
@@ -85,7 +85,7 @@ const WashingMachines = [
     capacity: "7.5 kg",
     type: "Fully Automatic",
     features: ["High Spin Speed", "Anti-Bacterial Technology", "Child Lock"],
-    rating: 4.5,
+    starRating: 4.5,
   },
   {
     id: 9,
@@ -96,7 +96,7 @@ const WashingMachines = [
     capacity: "9 kg",
     type: "Fully Automatic",
     features: ["TurboWash", "6 Motion Direct Drive", "AI DD Technology"],
-    rating: 4.8,
+    starRating: 4.8,
   },
   {
     id: 10,
@@ -107,7 +107,7 @@ const WashingMachines = [
     capacity: "7 kg",
     type: "Top Load",
     features: ["EcoBubble Technology", "Diamond Drum", "Child Lock"],
-    rating: 4.5,
+    starRating: 4.5,
   },
   {
     id: 11,
@@ -118,7 +118,7 @@ const WashingMachines = [
     capacity: "7 kg",
     type: "Semi-Automatic",
     features: ["Lint Filter", "Collar Scrubber", "Multi-Wash Modes"],
-    rating: 4.3,
+    starRating: 4.3,
   },
   {
     id: 12,
@@ -129,7 +129,7 @@ const WashingMachines = [
     capacity: "6.5 kg",
     type: "Semi-Automatic",
     features: ["Heavy Duty", "Rust-Free Body", "3 Wash Programs"],
-    rating: 4.1,
+    starRating: 4.1,
   },
   {
     id: 13,
@@ -140,7 +140,7 @@ const WashingMachines = [
     capacity: "6 kg",
     type: "Semi-Automatic",
     features: ["Toughened Glass", "Rotary Knob", "Auto-Rinse Technology"],
-    rating: 4.2,
+    starRating: 4.2,
   },
   {
     id: 14,
@@ -151,7 +151,7 @@ const WashingMachines = [
     capacity: "6.5 kg",
     type: "Semi-Automatic",
     features: ["Big Tub Capacity", "Anti-Rust", "Wash Programs"],
-    rating: 4.4,
+    starRating: 4.4,
   },
   {
     id: 15,
@@ -162,7 +162,7 @@ const WashingMachines = [
     capacity: "6 kg",
     type: "Fully Automatic",
     features: ["Quick Wash", "Child Lock", "Multi-Wash Programs"],
-    rating: 4.5,
+    starRating: 4.5,
   }
 ];
 

@@ -7,7 +7,7 @@ const outdoorUmbrellasAndCanopies = [
     price: 3499,
     type: "Umbrella",
     features: ["UV-resistant", "Easy to use", "Durable fabric"],
-    rating: 4.5,
+    starRating: 4.5,
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const outdoorUmbrellasAndCanopies = [
     price: 2999,
     type: "Umbrella",
     features: ["Adjustable height", "Windproof", "Water-resistant fabric"],
-    rating: 4.6,
+    starRating: 4.6,
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const outdoorUmbrellasAndCanopies = [
     price: 4999,
     type: "Umbrella",
     features: ["Solar-powered LED lights", "Tilting function", "Heavy-duty frame"],
-    rating: 4.7,
+    starRating: 4.7,
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ const outdoorUmbrellasAndCanopies = [
     price: 5999,
     type: "Canopy",
     features: ["Waterproof", "UV-protected", "Durable steel frame"],
-    rating: 4.5,
+    starRating: 4.5,
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ const outdoorUmbrellasAndCanopies = [
     price: 7999,
     type: "Canopy",
     features: ["Portable", "Spacious design", "UV and waterproof"],
-    rating: 4.6,
+    starRating: 4.6,
   },
   {
     id: 6,
@@ -57,7 +57,7 @@ const outdoorUmbrellasAndCanopies = [
     price: 6499,
     type: "Umbrella",
     features: ["Heavy-duty structure", "360-degree rotation", "Wind-resistant"],
-    rating: 4.8,
+    starRating: 4.8,
   },
   {
     id: 7,
@@ -67,7 +67,7 @@ const outdoorUmbrellasAndCanopies = [
     price: 1999,
     type: "Umbrella",
     features: ["Compact design", "UV protection", "Lightweight frame"],
-    rating: 4.4,
+    starRating: 4.4,
   },
   {
     id: 8,
@@ -77,7 +77,7 @@ const outdoorUmbrellasAndCanopies = [
     price: 6999,
     type: "Umbrella",
     features: ["LED lighting", "Durable canopy", "Tilt function"],
-    rating: 4.7,
+    starRating: 4.7,
   },
   {
     id: 9,
@@ -87,7 +87,7 @@ const outdoorUmbrellasAndCanopies = [
     price: 8999,
     type: "Canopy",
     features: ["Waterproof", "Easy to set up", "Sturdy poles"],
-    rating: 4.5,
+    starRating: 4.5,
   },
   {
     id: 10,
@@ -97,7 +97,7 @@ const outdoorUmbrellasAndCanopies = [
     price: 7999,
     type: "Umbrella",
     features: ["UV-resistant fabric", "Tilt & rotate function", "Durable steel pole"],
-    rating: 4.6,
+    starRating: 4.6,
   }
 ];
 

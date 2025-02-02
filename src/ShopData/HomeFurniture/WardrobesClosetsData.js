@@ -7,7 +7,7 @@ const wardrobesAndClosets = [
     price: 17999,
     type: "Wardrobe",
     features: ["Sliding doors", "Mirror finish", "Wooden finish"],
-    rating: 4.6,
+    starRating: 4.6,
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const wardrobesAndClosets = [
     price: 15999,
     type: "Wardrobe",
     features: ["Solid wood", "Spacious compartments", "Durable construction"],
-    rating: 4.5,
+    starRating: 4.5,
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const wardrobesAndClosets = [
     price: 18999,
     type: "Wardrobe",
     features: ["Swivel door", "Modern design", "Sturdy build"],
-    rating: 4.7,
+    starRating: 4.7,
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ const wardrobesAndClosets = [
     price: 22999,
     type: "Wardrobe",
     features: ["Wooden finish", "Multiple shelves", "Hanging rod"],
-    rating: 4.6,
+    starRating: 4.6,
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ const wardrobesAndClosets = [
     price: 9999,
     type: "Closet",
     features: ["Compact design", "Multiple drawers", "Easy to assemble"],
-    rating: 4.3,
+    starRating: 4.3,
   },
   {
     id: 6,
@@ -57,7 +57,7 @@ const wardrobesAndClosets = [
     price: 18999,
     type: "Wardrobe",
     features: ["3-door design", "Spacious shelves", "Mirror attached"],
-    rating: 4.5,
+    starRating: 4.5,
   },
   {
     id: 7,
@@ -67,7 +67,7 @@ const wardrobesAndClosets = [
     price: 14999,
     type: "Closet",
     features: ["High-quality wood", "Multiple storage options", "Classic look"],
-    rating: 4.4,
+    starRating: 4.4,
   },
   {
     id: 8,
@@ -77,7 +77,7 @@ const wardrobesAndClosets = [
     price: 21999,
     type: "Wardrobe",
     features: ["Spacious design", "Wooden finish", "Sliding doors"],
-    rating: 4.7,
+    starRating: 4.7,
   },
   {
     id: 9,
@@ -87,7 +87,7 @@ const wardrobesAndClosets = [
     price: 12999,
     type: "Wardrobe",
     features: ["Plastic and metal frame", "Compact design", "Durable and easy to clean"],
-    rating: 4.3,
+    starRating: 4.3,
   },
   {
     id: 10,
@@ -97,7 +97,7 @@ const wardrobesAndClosets = [
     price: 24999,
     type: "Wardrobe",
     features: ["Solid wood", "Rustic finish", "Ample storage space"],
-    rating: 4.8,
+    starRating: 4.8,
   }
 ];
 

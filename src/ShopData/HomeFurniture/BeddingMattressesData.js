@@ -7,7 +7,7 @@ const beddingAndMattresses = [
     price: 8499,
     type: "Mattress",
     features: ["Memory foam", "Orthopedic support", "Breathable fabric"],
-    rating: 4.6,
+    starRating: 4.6,
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const beddingAndMattresses = [
     price: 10999,
     type: "Mattress",
     features: ["High-density foam", "Cool gel layer", "Hypoallergenic"],
-    rating: 4.5,
+    starRating: 4.5,
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const beddingAndMattresses = [
     price: 8999,
     type: "Mattress",
     features: ["Memory foam", "Medium-firm", "Motion isolation"],
-    rating: 4.4,
+    starRating: 4.4,
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ const beddingAndMattresses = [
     price: 7999,
     type: "Mattress",
     features: ["Durable foam", "Hypoallergenic", "Provides support to the spine"],
-    rating: 4.3,
+    starRating: 4.3,
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ const beddingAndMattresses = [
     price: 11999,
     type: "Mattress",
     features: ["Orthopedic support", "Medium-firm", "Breathable fabric"],
-    rating: 4.7,
+    starRating: 4.7,
   },
   {
     id: 6,
@@ -57,7 +57,7 @@ const beddingAndMattresses = [
     price: 10999,
     type: "Mattress",
     features: ["Innerspring coils", "Firm support", "Temperature control"],
-    rating: 4.6,
+    starRating: 4.6,
   },
   {
     id: 7,
@@ -67,7 +67,7 @@ const beddingAndMattresses = [
     price: 13999,
     type: "Mattress",
     features: ["Orthopedic", "Dual comfort", "Latex foam for support"],
-    rating: 4.8,
+    starRating: 4.8,
   },
   {
     id: 8,
@@ -77,7 +77,7 @@ const beddingAndMattresses = [
     price: 17999,
     type: "Mattress",
     features: ["Memory foam", "3-zone support", "Temperature regulation"],
-    rating: 4.7,
+    starRating: 4.7,
   },
   {
     id: 9,
@@ -87,7 +87,7 @@ const beddingAndMattresses = [
     price: 7499,
     type: "Mattress",
     features: ["Orthopedic foam", "Firm support", "Breathable fabric"],
-    rating: 4.4,
+    starRating: 4.4,
   },
   {
     id: 10,
@@ -97,7 +97,7 @@ const beddingAndMattresses = [
     price: 9999,
     type: "Mattress",
     features: ["High-density foam", "Gel technology for cooling", "Soft surface"],
-    rating: 4.5,
+    starRating: 4.5,
   },
   {
     id: 11,
@@ -107,7 +107,7 @@ const beddingAndMattresses = [
     price: 12999,
     type: "Mattress",
     features: ["Bamboo fabric cover", "Memory foam", "Hypoallergenic"],
-    rating: 4.6,
+    starRating: 4.6,
   },
   {
     id: 12,
@@ -117,7 +117,7 @@ const beddingAndMattresses = [
     price: 15999,
     type: "Mattress",
     features: ["SmartGRID technology", "Medium-firm", "Airflow for comfort"],
-    rating: 4.8,
+    starRating: 4.8,
   },
   {
     id: 13,
@@ -127,7 +127,7 @@ const beddingAndMattresses = [
     price: 6499,
     type: "Mattress",
     features: ["Coir material", "Supports spine alignment", "Breathable cover"],
-    rating: 4.2,
+    starRating: 4.2,
   },
   {
     id: 14,
@@ -137,7 +137,7 @@ const beddingAndMattresses = [
     price: 5999,
     type: "Mattress",
     features: ["Comfort foam", "Soft feel", "Affordable and durable"],
-    rating: 4.3,
+    starRating: 4.3,
   },
   {
     id: 15,
@@ -147,7 +147,7 @@ const beddingAndMattresses = [
     price: 14999,
     type: "Mattress",
     features: ["Dual comfort layers", "Memory foam", "Breathable fabric"],
-    rating: 4.7,
+    starRating: 4.7,
   }
 ];
 

@@ -27,6 +27,12 @@ import Watches from './MiniNavSection/MenNav/Watches';
 import Sarees from './MiniNavSection/WomenNav/Sarees';
 import Kurtha from './MiniNavSection/WomenNav/Kurtha';
 import Slippers from './MiniNavSection/WomenNav/Slippers';
+import Sports from './MiniNav/Sports';
+import AirConditioners from './MiniNavSection/HomeAppliances/AirConditioners';
+import Microwaves from './MiniNavSection/HomeAppliances/Microwaves';
+import Refrigerators from './MiniNavSection/HomeAppliances/Refrigerators';
+import ST from './MiniNavSection/HomeAppliances/ST';
+import WahingMachines from './MiniNavSection/HomeAppliances/WahingMachines';
 
 const App = () => {
 
@@ -68,9 +74,17 @@ const App = () => {
               <Route path='kurthas' element={<Kurtha />} />
               <Route path='slippers' element={<Slippers />} />
             </Route>
-            <Route path='/home/home-appliances' element={<HomeAppliances />} />
+            <Route path='/home/homeappliances' element={<HomeAppliances />}>
+              <Route index element={<AirConditioners />} />
+              <Route path='airconditioners' element={<AirConditioners />} />
+              <Route path='microwave' element={<Microwaves />} />
+              <Route path='refrigerators' element={<Refrigerators />} />
+              <Route path='st' element={<ST />} />
+              <Route path='washingmachines' element={<WahingMachines />} /> 
+            </Route>
             <Route path='/home/home-furniture' element={<HomeFurniture />} />
             <Route path='/home/gadgets' element={<Gadgets />} />
+            <Route path='/home/sports' element={<Sports />} />
             <Route path='/home/daily-deals' element={<DailyDeals />} />
             <Route path='/home/customer-service' element={<CustomerService />} />
             <Route path='/home/account' element={<Account />} />

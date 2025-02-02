@@ -67,7 +67,7 @@ const NavBar = ({ handleLogOut }) => {
                     Ladies Wear
                 </Link>
                 <Link
-                    to="/home/home-appliances"
+                    to="/home/homeappliances"
                 >
                     Home Appliances
                 </Link>
@@ -80,6 +80,11 @@ const NavBar = ({ handleLogOut }) => {
                     to="/home/gadgets"
                 >
                     Gadgets
+                </Link>
+                <Link
+                    to="/home/sports"
+                >
+                    Sports
                 </Link>
                 <Link
                     to="/home/daily-deals"

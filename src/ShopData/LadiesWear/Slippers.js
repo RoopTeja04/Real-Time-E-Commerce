@@ -9,7 +9,7 @@ const footwear = [
         material: "Synthetic",
         heelHeight: "3 inches",
         soleMaterial: "TPR",
-        rating: 4.0,
+        starRating: 4.0,
         shortName: "Catwalk Sandals"
     },
     {
@@ -22,7 +22,7 @@ const footwear = [
         material: "Faux Leather",
         heelHeight: "2.5 inches",
         soleMaterial: "Rubber",
-        rating: 3.5,
+        starRating: 3.5,
         shortName: "Bata Sandals"
     },
     {
@@ -35,7 +35,7 @@ const footwear = [
         material: "Patent Leather",
         heelHeight: "4 inches",
         soleMaterial: "Synthetic",
-        rating: 4.0,
+        starRating: 4.0,
         shortName: "Metro Stilettos"
     },
     {
@@ -48,7 +48,7 @@ const footwear = [
         material: "Leather",
         heelHeight: "0.5 inches",
         soleMaterial: "Rubber",
-        rating: 3.5,
+        starRating: 3.5,
         shortName: "Hush Puppies"
     },
     {
@@ -61,7 +61,7 @@ const footwear = [
         material: "Croslite",
         heelHeight: "1 inch",
         soleMaterial: "Croslite",
-        rating: 4.0,
+        starRating: 4.0,
         shortName: "Crocs Sandals"
     },
     {
@@ -74,7 +74,7 @@ const footwear = [
         material: "Synthetic",
         heelHeight: "3.5 inches",
         soleMaterial: "PU",
-        rating: 4.0,
+        starRating: 4.0,
         shortName: "Mochi Heels"
     },
     {
@@ -87,7 +87,7 @@ const footwear = [
         material: "Synthetic Leather",
         heelHeight: "1 inch",
         soleMaterial: "Rubber",
-        rating: 3.5,
+        starRating: 3.5,
         shortName: "Liberty Sandals"
     },
     {
@@ -100,7 +100,7 @@ const footwear = [
         material: "Fabric",
         heelHeight: "2 inches",
         soleMaterial: "EVA",
-        rating: 3.5,
+        starRating: 3.5,
         shortName: "Red Tape Wedges"
     },
     {
@@ -113,7 +113,7 @@ const footwear = [
         material: "Synthetic",
         heelHeight: "3.5 inches",
         soleMaterial: "Synthetic",
-        rating: 4.0,
+        starRating: 4.0,
         shortName: "Aldo Heels"
     },
     {
@@ -126,7 +126,7 @@ const footwear = [
         material: "Synthetic",
         heelHeight: "3 inches",
         soleMaterial: "TPR",
-        rating: 3.5,
+        starRating: 3.5,
         shortName: "Ajanta Platforms"
     },
     {
@@ -139,7 +139,7 @@ const footwear = [
         material: "Fabric",
         heelHeight: "0.5 inches",
         soleMaterial: "Rubber",
-        rating: 3.5,
+        starRating: 3.5,
         shortName: "Campus Sandals"
     },
     {
@@ -152,7 +152,7 @@ const footwear = [
         material: "Leather",
         heelHeight: "4 inches",
         soleMaterial: "TPU",
-        rating: 4.0,
+        starRating: 4.0,
         shortName: "Steve Madden"
     },
     {
@@ -165,7 +165,7 @@ const footwear = [
         material: "Synthetic",
         heelHeight: "0.5 inches",
         soleMaterial: "TPR",
-        rating: 3.5,
+        starRating: 3.5,
         shortName: "Bata Flats"
     },
     {
@@ -178,7 +178,7 @@ const footwear = [
         material: "Synthetic Leather",
         heelHeight: "2.5 inches",
         soleMaterial: "Rubber",
-        rating: 4.0,
+        starRating: 4.0,
         shortName: "Van Heusen Slingbacks"
     },
     {
@@ -191,7 +191,7 @@ const footwear = [
         material: "Faux Leather",
         heelHeight: "2 inches",
         soleMaterial: "Rubber",
-        rating: 3.5,
+        starRating: 3.5,
         shortName: "Khadim's Heels"
     }
 ];

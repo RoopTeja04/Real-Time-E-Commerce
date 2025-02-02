@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useCart } from '../../Carts&Orders/cartContext';
-import kurtasData from '../../ShopData/LadiesWear/Kurtha';
+import MicroWavesData from '../../ShopData/HomeAppliances/Microwaves';
 
-const Kurtha = () => {
-
+const Microwaves = () => {
+    
     const [ selectedNames, setSelectedNames ] = useState([]);
     const [ selectedRanges, setSelectedRanges ] = useState([]); 
     const [ selectedRating, setSelectedRating ] = useState([]);
@@ -36,7 +36,7 @@ const Kurtha = () => {
 
 
 
-    const filteredData = kurtasData.filter((data) => {
+    const filteredData = MicroWavesData.filter((data) => {
 
         const matchName = 
             selectedNames.length === 0 ||
@@ -65,83 +65,55 @@ const Kurtha = () => {
         <>
             <div className="min-h-screen flex flex-row w-full">
                 <div className="flex flex-col border-r-2 w-1/6 px-4 py-4">
-                <p className="text-lg font-semibold">Product Name</p>
-                    <label>
-                        <input type='checkbox' value="Anarkali Kurta" onChange={(e) => handleNameChange(e.target.value)} /> 
-                        <span className="text-base tracking-wide pl-1">Anarkali Kurta</span>
-                    </label>
-                    <label>
-                        <input type='checkbox' value="A-Line Kurta" onChange={(e) => handleNameChange(e.target.value)} /> 
-                        <span className="text-base tracking-wide pl-1">A-Line Kurta</span>
-                    </label>
-                    <label>
-                        <input type='checkbox' value="Straight Kurta" onChange={(e) => handleNameChange(e.target.value)} /> 
-                        <span className="text-base tracking-wide pl-1">Straight Kurta</span>
-                    </label>
-                    <label>
-                        <input type='checkbox' value="Angrakha Kurta" onChange={(e) => handleNameChange(e.target.value)} /> 
-                        <span className="text-base tracking-wide pl-1">Angrakha Kurta</span>
-                    </label>
-                    <label>
-                        <input type='checkbox' value="Kaftan Kurta" onChange={(e) => handleNameChange(e.target.value)} /> 
-                        <span className="text-base tracking-wide pl-1">Kaftan Kurta</span>
-                    </label>
-                    <label>
-                        <input type='checkbox' value="Indo-Western Kurta" onChange={(e) => handleNameChange(e.target.value)} /> 
-                        <span className="text-base tracking-wide pl-1">Indo-Western Kurta</span>
-                    </label>
-                    <label>
-                        <input type='checkbox' value="Flared Kurta" onChange={(e) => handleNameChange(e.target.value)} /> 
-                        <span className="text-base tracking-wide pl-1">Flared Kurta</span>
-                    </label>
-                    <label>
-                        <input type='checkbox' value="Layered Kurta" onChange={(e) => handleNameChange(e.target.value)} /> 
-                        <span className="text-base tracking-wide pl-1">Layered Kurta</span>
-                    </label>
-                    <label>
-                        <input type='checkbox' value="Front-Slit Kurta" onChange={(e) => handleNameChange(e.target.value)} /> 
-                        <span className="text-base tracking-wide pl-1">Front-Slit Kurta</span>
-                    </label>
-                    <label>
-                        <input type='checkbox' value="Asymmetric Kurta" onChange={(e) => handleNameChange(e.target.value)} /> 
-                        <span className="text-base tracking-wide pl-1">Asymmetric Kurta</span>
-                    </label>
-                    <label>
-                        <input type='checkbox' value="Panelled Kurta" onChange={(e) => handleNameChange(e.target.value)} /> 
-                        <span className="text-base tracking-wide pl-1">Panelled Kurta</span>
-                    </label>
-                    <label>
-                        <input type='checkbox' value="Jacket Style Kurta" onChange={(e) => handleNameChange(e.target.value)} /> 
-                        <span className="text-base tracking-wide pl-1">Jacket Style Kurta</span>
-                    </label>
-                    <label>
-                        <input type='checkbox' value="Cape Style Kurta" onChange={(e) => handleNameChange(e.target.value)} /> 
-                        <span className="text-base tracking-wide pl-1">Cape Style Kurta</span>
-                    </label>
-                    <label>
-                        <input type='checkbox' value="High-Low Kurta" onChange={(e) => handleNameChange(e.target.value)} /> 
-                        <span className="text-base tracking-wide pl-1">High-Low Kurta</span>
-                    </label>
-                    <label>
-                        <input type='checkbox' value="Peplum Kurta" onChange={(e) => handleNameChange(e.target.value)} /> 
-                        <span className="text-base tracking-wide pl-1">Peplum Kurta</span>
-                    </label>
-
+                    <p className="text-lg font-semibold">Product Name</p>
+                        <label>
+                            <input type='checkbox' value="Samsung" onChange={(e) => handleNameChange(e.target.value)} /> 
+                            <span className="text-base tracking-wide pl-1">Samsung</span>
+                        </label>
+                        <label>
+                            <input type='checkbox' value="LG" onChange={(e) => handleNameChange(e.target.value)} /> 
+                            <span className="text-base tracking-wide pl-1">LG</span>
+                        </label>
+                        <label>
+                            <input type='checkbox' value="IFB" onChange={(e) => handleNameChange(e.target.value)} /> 
+                            <span className="text-base tracking-wide pl-1">IFB</span>
+                        </label>
+                        <label>
+                            <input type='checkbox' value="Panasonic" onChange={(e) => handleNameChange(e.target.value)} /> 
+                            <span className="text-base tracking-wide pl-1">Panasonic</span>
+                        </label>
+                        <label>
+                            <input type='checkbox' value="Godrej" onChange={(e) => handleNameChange(e.target.value)} /> 
+                            <span className="text-base tracking-wide pl-1">Godrej</span>
+                        </label>
+                        <label>
+                            <input type='checkbox' value="Bajaj" onChange={(e) => handleNameChange(e.target.value)} /> 
+                            <span className="text-base tracking-wide pl-1">Bajaj</span>
+                        </label>
+                        <label>
+                            <input type='checkbox' value="Whirlpool" onChange={(e) => handleNameChange(e.target.value)} /> 
+                            <span className="text-base tracking-wide pl-1">Whirlpool</span>
+                        </label>
+                        <label>
+                            <input type='checkbox' value="Sharp" onChange={(e) => handleNameChange(e.target.value)} /> 
+                            <span className="text-base tracking-wide pl-1">Sharp</span>
+                        </label>
                     <p className="text-lg font-semibold tracking-wide pt-4 pb-2">
                         Price Range
                     </p>
                     <label>
-                        <input type='checkbox' value="2000 to 3000" onChange={(e) => handleRangeChange(e.target.value)} /> 
-                        <span className="text-base tracking-wide pl-1">₹2,000 to ₹3,000</span>
+                        <input type='checkbox' value="15000 to 20000" onChange={(e) => handleRangeChange(e.target.value)} /> 
+                        <span className="text-base tracking-wide pl-1">₹15,000 to ₹20,000</span>
                     </label>
                     <label>
-                        <input type='checkbox' value="1000 to 2000" onChange={(e) => handleRangeChange(e.target.value)} /> 
-                        <span className="text-base tracking-wide pl-1">₹1,000 to ₹2,000</span>
+                        <input type='checkbox' value="10000 to 15000" onChange={(e) => handleRangeChange(e.target.value)} /> 
+                        <span className="text-base tracking-wide pl-1">₹10,000 to ₹15,000</span>
                     </label>
                     <label>
-                        <input type='checkbox' value="500 to 1000" onChange={(e) => handleRangeChange(e.target.value)} /> 
-                        <span className="text-base tracking-wide pl-1">₹500 to ₹1,000</span>
+                        <input type='checkbox' value="5000 to 10000" onChange={(e) => handleRangeChange(e.target.value)} /> 
+                        <span className="text-base tracking-wide pl-1">₹5,000 to ₹10,000</span>
                     </label>
+
                     <p className="text-lg font-semibold tracking-wide pt-4 pb-2">
                         Star Rating
                     </p>
@@ -157,6 +129,7 @@ const Kurtha = () => {
                         <input type='checkbox' value="3.5 to 4" onChange={(e) => handleStarRating(e.target.value)} /> 
                         <span className="text-base tracking-wide pl-1">3.5 to 4</span>
                     </label>
+
                 </div>
                 <div className="flex flex-col px-8 py-8 w-full">
                     {filteredData.length > 0 ? (
@@ -164,7 +137,7 @@ const Kurtha = () => {
                             {
                                 filteredData.map((item) => (
                                     <div className="border rounded-lg p-6 flex flex-col items-center" key={item.id}>
-                                        <img className="h-48 rounded-lg" src={item.imageURL} alt={item.name} />
+                                        <img className="h-32 rounded-lg" src={item.imageURL} alt={item.name} />
                                         <div className="flex flex-col items-center mt-4 border-t-2 outline-offset-8 w-full">
                                             <p className="mt-2 font-semibold text-lg tracking-wide">{item.name}</p>
                                             <span className="mt-1 text-lg tracking-wider">₹ {item.price.toLocaleString("hi-IN")} /-</span>
@@ -193,4 +166,4 @@ const Kurtha = () => {
     )
 }
 
-export default Kurtha
+export default Microwaves
