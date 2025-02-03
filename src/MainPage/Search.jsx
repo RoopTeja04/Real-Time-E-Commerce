@@ -77,7 +77,7 @@ const Search = () => {
                 </div>
 
                 <div className='w-full mt-10'>
-                    <div className='mx-5 grid grid-cols-5 gap-6'>
+                    <div className='mx-5 grid grid-cols-4 gap-6'>
                         {
                             visible && 
                                 (
@@ -85,7 +85,7 @@ const Search = () => {
                                         (
                                             searchResult.map((item, index) =>(
                                                 <div key={index} className={`${ theme === "Light" ? "text-white border-white border-2 p-4 rounded-xl" : " text-black border-black border-2 p-4 rounded-lg" } flex flex-col justify-center items-center rounded-xl drop-shadow-2xl`}>
-                                                    <img className='h-32 my-5 drop-shadow-2xl' src={item.imageURL} alt={item.name} />
+                                                    <img className='h-44 my-5 drop-shadow-2xl' src={item.imageURL} alt={item.name} />
                                                     <div className='flex flex-col items-center my-2'>
                                                         <h1 className='text-lg font-semibold tracking-wide text-center'>{item.name}</h1>
                                                         <h1 className='text-2xl font-semibold tracking-wide pt-2 pb-2'>₹ { item.price.toLocaleString("hi-IN")} /-</h1>

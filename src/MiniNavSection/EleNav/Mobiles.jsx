@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import MobilesData from "../../ShopData/Electronics/Mobile";
 import { useCart } from "../../Carts&Orders/cartContext";
+import { useTheme } from "../../ContextAPI/ThemeContext";
 
 const Mobiles = () => {
 
   const { AddToCart } = useCart();
+  const { theme } = useTheme();
 
   const [selectedNames, setSelectedNames] = useState([]);
   const [selectedRanges, setSelectedRanges] = useState([]);
@@ -252,7 +254,7 @@ const Mobiles = () => {
         {FilteredData.length > 0 ? (
           <div className="grid grid-cols-4 gap-8">
             {FilteredData.map((item) => (
-              <div className="border rounded-lg p-6 flex flex-col items-center" key={item.id}>
+              <div className={`${ theme === "Light" ? "border-2 border-white" : "border-2 border-gray-900"} rounded-lg p-6 flex flex-col items-center`} key={item.id}>
                 <img className="h-56 rounded-lg" src={item.imageURL} alt={item.name} />
                 <div className="flex flex-col items-center mt-4 border-t-2 outline-offset-8 w-full">
                   <p className="mt-2 font-semibold text-lg tracking-wide">{item.name}</p>

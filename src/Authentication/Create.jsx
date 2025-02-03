@@ -8,6 +8,7 @@ const Create = () => {
     const [ userName, setUserName ] = useState("");
     const [ password, setPassword ] = useState("");
     const [ visible, setVisible ] = useState(false);
+    const [ msg, setMsg ] = useState("")
     const navigate = useNavigate();
 
     const handleCreate = () => {
@@ -21,6 +22,8 @@ const Create = () => {
 
         localStorage.setItem("intialUsername", userName);
         localStorage.setItem("intialPassword", password);
+
+        setMsg("Account Created Successfully! ");
 
         setTimeout(() => {
             navigate("/")
@@ -61,6 +64,7 @@ const Create = () => {
                                 }
                             </button>
                         </div>
+                        <p className='relative text-center bottom-7 text-green-600 text-xl font-bold tracking-wider'>{msg}</p>
                         <div className='h-7 mb-10 flex flex-row justify-around items-center'>
                             <button onClick={handleCreate} className='border-2 px-6 font-semibold tracking-wide text-base h-12 rounded-xl hover:bg-white hover:text-black transition-all duration-300 ease-in-out'>Create Account</button>
                             <button onClick={() => navigate("/")} className='text-base capitalize tracking-wide hover:text-green-600 font-semibold'>Login</button>
