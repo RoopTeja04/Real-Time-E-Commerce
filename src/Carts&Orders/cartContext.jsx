@@ -17,6 +17,8 @@ export const CartProvider = ({ children }) => {
         });
     }
 
+    console.log(cartItems)
+
     const RemoveFromCart = ( item ) => {
         setCartItems(cartItems.filter((cartItem) => cartItem !== item));
     }
