@@ -38,7 +38,7 @@ const DailyDeals = () => {
   ];
 
   const generateDeals = () => {
-    const offers = Array.from({ length: 10 }, () => Math.floor(1 + Math.random() * 80));
+    const offers = Array.from({ length: 10 }, () => Math.floor( 1 + Math.random() * 85 ) )
     const getRandomData = (data, count) => [...data].sort(() => Math.random() - 0.5).slice(0, count);
     const selectedData = getRandomData(allShopData, 10);
 
@@ -63,6 +63,7 @@ const DailyDeals = () => {
             <img className='h-32' src={item.imageURL} alt='' />
             <h1>{item.name}</h1>
             <p>offer: {item.offer} % </p>
+            <p>Price: {item.price}</p>
           </div>
         ))
       }
