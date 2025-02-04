@@ -50,7 +50,7 @@ const NavBar = ({ handleLogOut }) => {
                     </button>
                 </div>
             </div>
-            <div className={ `${theme === "Light" ? "border-b-2 border-gray-500" : "border-b-2 border-gray-800"} h-10 pl-5 flex items-center justify-evenly`}>
+            <div className={`${theme === "Light" ? "border-white" : "border-gray-900"} border-b-2 h-10 pl-5 flex items-center justify-evenly`}>
                 <Link
                     to="/home/electronics"
                 >

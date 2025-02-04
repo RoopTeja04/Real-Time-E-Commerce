@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import LaptopsData from '../../ShopData/Electronics/Laptop';
 import { useCart } from '../../Carts&Orders/cartContext';
+import { useTheme } from '../../ContextAPI/ThemeContext';
 
 const Laptops = () => {
     const [selectedNames, setSelectedNames] = useState([]);
@@ -8,6 +9,7 @@ const Laptops = () => {
     const [selectedRating, setSelectedRating] = useState([]);
 
     const { AddToCart } = useCart();
+    const { theme } = useTheme();
 
     const handleNameChange = (value) => {
         setSelectedNames((selectedNames) =>
@@ -59,7 +61,7 @@ const Laptops = () => {
 
     return (
         <div className="min-h-screen flex flex-row w-full">
-            <div className="flex flex-col border-r-2 w-1/6 px-4 py-4">
+            <div className={`flex flex-col border-r-2 w-1/6 px-4 py-4 ${ theme === "Light" ? "border-gray-100" : "border-gray-900"}`}>
                 <div className="flex flex-col w-full">
                     <p className="text-lg font-semibold">Product Name</p>
                     <label>
@@ -143,15 +145,15 @@ const Laptops = () => {
                     <div className="grid grid-cols-4 gap-8">
                         {
                             filteredData.map((item) => (
-                                <div className="border rounded-lg p-6 flex flex-col items-center" key={item.id}>
+                                <div className={`border-2 rounded-lg p-6 flex flex-col items-center ${ theme === "Light" ? "border-gray-100" : "border-gray-900"}`} key={item.id}>
                                     <img className="h-36 rounded-lg" src={item.imageURL} alt={item.name} />
-                                    <div className="flex flex-col items-center mt-4 border-t-2 outline-offset-8 w-full">
+                                    <div className={`flex flex-col items-center mt-4 ${ theme === "Light" ? "border-gray-100" : "border-gray-900"} border-t-2 outline-offset-8 w-full`}>
                                         <p className="mt-2 font-semibold text-lg tracking-wide">{item.name}</p>
                                         <span className="mt-1 text-lg tracking-wider">₹ {item.price.toLocaleString("hi-IN")} /-</span>
                                     </div> 
                                     <div className="flex flex-col space-y-3 mt-4">
-                                        <button className="bg-yellow-500 h-10 w-full px-8 rounded-lg text-black font-semibold tracking-wide text-base cursor-pointer" onClick={() => AddToCart(item)}>Add To Cart</button>
-                                        <button className="bg-green-500 h-10 w-full px-6 rounded-lg text-black font-semibold tracking-wide text-base cursor-pointer">Buy Now</button>
+                                        <button className="bg-yellow-500 h-10 w-full px-8 rounded-lg text-black font-semibold tracking-wide text-base cursor-pointer hover:bg-yellow-600 transition-all duration-300 ease-linear" onClick={() => AddToCart(item)}>Add To Cart</button>
+                                        <button className="bg-green-500 h-10 w-full px-6 rounded-lg text-black font-semibold tracking-wide text-base cursor-pointer hover:bg-green-700 transition-all duration-300 ease-linear">Buy Now</button>
                                     </div>     
                                 </div>
                             ))
