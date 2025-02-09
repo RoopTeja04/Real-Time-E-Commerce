@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useCart } from '../../Carts&Orders/cartContext';
 import ShoesData  from '../../ShopData/MensWear/Shoes';
+import { useTheme } from '../../ContextAPI/ThemeContext';
 
 const Shoes = () => {
 
@@ -9,6 +10,7 @@ const Shoes = () => {
     const [ selectedRating, setSelectedRating ] = useState([]);
 
     const { AddToCart } = useCart();
+    const { theme } = useTheme();
 
     const handleNameChange = (value) => {
         setSelectedNames((selectedNames) =>
@@ -64,7 +66,7 @@ const Shoes = () => {
     return (
         <>
             <div className="min-h-screen flex flex-row w-full">
-                <div className="flex flex-col border-r-2 w-1/6 px-4 py-4">
+                <div className={`flex flex-col border-r-2 w-1/6 px-4 py-4 ${ theme === "Light" ? "border-white" : "border-gray-900" }`}>
                     <p className="text-lg font-semibold">Product Name</p>
                     <label>
                     <input type='checkbox' value="Nike" onChange={(e) => handleNameChange(e.target.value)} /> 
@@ -154,9 +156,9 @@ const Shoes = () => {
                         <div className="grid grid-cols-4 gap-8">
                             {
                                 filteredData.map((item) => (
-                                    <div className="border rounded-lg p-6 flex flex-col items-center" key={item.id}>
+                                    <div className={`border-2 rounded-lg p-6 flex flex-col items-center ${ theme === "Light" ? "border-white" : "border-gray-900" }`} key={item.id}>
                                         <img className="h-40 w-full rounded-lg" src={item.imageURL} alt={item.name} />
-                                        <div className="flex flex-col items-center mt-4 border-t-2 outline-offset-8 w-full">
+                                        <div className={`flex flex-col items-center mt-4 border-t-2 outline-offset-8 w-full ${ theme === "Light" ? "border-white" : "border-gray-900" }`}>
                                             <p className="mt-2 font-semibold text-lg tracking-wide">{item.shortName}</p>
                                             <span className="mt-1 text-lg tracking-wider">₹ {item.price.toLocaleString("hi-IN")} /-</span>
                                         </div> 

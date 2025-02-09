@@ -8,7 +8,7 @@ const Electronics = () => {
 
   return (
     <>
-      <div className={`flex flex-row justify-evenly p-2 tracking-wide text-base border-b-2 ${ theme === "Light" ? "border-white font-medium" : "border-gray-900 font-medium" } border-gray-300`}>
+      <div className={`flex flex-row justify-evenly p-2 tracking-wide text-base border-b-2 ${ theme === "Light" ? "border-white font-medium" : "border-gray-900 font-medium" }`}>
         <Link to="mobiles">Mobile's</Link>
         <Link to="laptops">Laptop's</Link>
         <Link to="airpods">AirPod's</Link>
