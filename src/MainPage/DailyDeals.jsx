@@ -24,11 +24,13 @@ import CricketBats from '../ShopData/Sports/CricketBat';
 import CricketJerseys from '../ShopData/Sports/Jersey';
 import sportsShoes from '../ShopData/Sports/SportShoes';
 import { useCart } from '../Carts&Orders/cartContext';
+import { useTheme } from '../ContextAPI/ThemeContext';
 
 const DailyDeals = () => {
 
-  const [finalDailyDeal, setFinalDailyDeal] = useState([]);
+  const [ finalDailyDeal, setFinalDailyDeal ] = useState([]);
   const { AddToCart } = useCart();
+  const { theme } = useTheme();
 
   const allShopData = [
     ...AirPods, ...Laptops, ...Mobiles, ...TVs, ...HomeTheaters,
@@ -44,8 +46,20 @@ const DailyDeals = () => {
     const getRandomData = (data, count) => [...data].sort(() => Math.random() - 0.5).slice(0, count);
     const selectedData = getRandomData(allShopData, 10);
 
-    setFinalDailyDeal(selectedData.map((item, index) => ({ ...item, offer: offers[index], offerAmount: Math.round((offers[index] / 100) * item.price )})));
+    setFinalDailyDeal(
+      selectedData.map((item, index) => {
+        const offerAmount = Math.round((offers[index] / 100) * item.price);
+        return {
+          ...item,
+          offer: offers[index],
+          offerAmount,
+          offerPrice: item.price - offerAmount,
+        };
+      })
+    );
   };
+
+  console.log(finalDailyDeal)
 
   useEffect(() => {
     generateDeals();
@@ -62,16 +76,16 @@ const DailyDeals = () => {
       <div className='grid grid-cols-3 gap-14'>
         {
           finalDailyDeal.map((item, index) => (
-            <div className="border rounded-xl p-6 flex flex-col items-center" key={`${item.id}-${index}`}>
+            <div className={`border-2 rounded-lg p-6 flex flex-col items-center ${ theme === "Light" ? "border-white" : "border-gray-900" }`} key={`${item.id}-${index}`}>
               <img className="h-48 rounded" src={item.imageURL} alt={item.name} />
-              <div className="flex flex-col items-center mt-4 border-t-2 outline-offset-8 w-full">
-                <p className="mt-2 font-semibold text-lg tracking-wide text-center">{item.name}</p>
+              <div className={`flex flex-col items-center mt-4 border-t-2 outline-offset-8 w-full ${ theme === "Light" ? "border-white" : "border-gray-900" }`}>
+                <p className="mt-2 font-semibold text-lg tracking-wide text-center"> {item.shortName && item.shortName.trim() !== "" ? item.shortName : item.name}</p>
                   <p className="m-2 tracking-wide bg-red-900 text-white font-semibold rounded-full py-1 px-3 text-lg">
                     🔥 {item.offer}% OFF
                   </p>
                 <div className='flex space-x-4 items-center' >
-                  <span className="mt-1 text-base text-gray-400 line-through tracking-wider">₹ {item.price.toLocaleString("hi-IN")} /-</span>
-                  <span className="mt-1 text-2xl tracking-wide">₹ {Number(item.price - item.offerAmount).toLocaleString("hi-IN")} /-</span>
+                  <span className="mt-1 text-base text-gray-400 line-through font-semibold tracking-wider">₹ {item.price.toLocaleString("hi-IN")} /-</span>
+                  <span className="mt-1 text-2xl tracking-wide font-semibold">₹ {Number(item.offerPrice).toLocaleString("hi-IN")} /-</span>
                 </div>
               </div>
               <div className="flex flex-col space-y-3 mt-4">
