@@ -1,0 +1,83 @@
+[33mcommit fe5b51c087462e772f2592d24073fb465df7e71c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Roop Teja <roopteja112@gmail.com>
+Date:   Sun Feb 9 15:44:30 2025 +0530
+
+    added theme to some components
+
+[33mcommit 893fb9aa805bc7d947d9f96824a938aba93b3286[m
+Author: Roop Teja <roopteja112@gmail.com>
+Date:   Tue Feb 4 22:51:11 2025 +0530
+
+    theme switcher exhausted at elenav section
+
+[33mcommit 3eadd75bbc48f022fd45a5acddafd811ee4a9e46[m
+Author: Roop Teja <roopteja112@gmail.com>
+Date:   Mon Feb 3 22:40:23 2025 +0530
+
+    updating theme setter in components
+
+[33mcommit 47c8906dacf9b47000aa1d0d9a36dc7e8b99bebd[m
+Author: Roop Teja <roopteja112@gmail.com>
+Date:   Mon Feb 3 20:00:57 2025 +0530
+
+    completion of daily deal's section
+
+[33mcommit a20663ae207151f47c46bfedbc11008cba698911[m
+Author: Roop Teja <roopteja112@gmail.com>
+Date:   Mon Feb 3 07:50:18 2025 +0530
+
+    testing the daily deal's section
+
+[33mcommit 506f1d7150f4392bec95eed343f430a332986422[m
+Author: Roop Teja <roopteja112@gmail.com>
+Date:   Sun Feb 2 21:38:20 2025 +0530
+
+    daily deal's component successfull !
+
+[33mcommit 1e7b1a22e351c7816e75b936dc5c9d3f0bfc2c53[m
+Author: Roop Teja <roopteja112@gmail.com>
+Date:   Sun Feb 2 19:07:05 2025 +0530
+
+    completion of component's section
+
+[33mcommit b02d2af1c6d0eb86221a72f365720d8d4ff03325[m
+Author: Roop Teja <roopteja112@gmail.com>
+Date:   Sun Feb 2 16:24:59 2025 +0530
+
+    updating the ecommerce
+
+[33mcommit d423c24400f4fabe908ad0d3898b2722f28898d4[m
+Author: Roop Teja <roopteja112@gmail.com>
+Date:   Sat Feb 1 22:26:30 2025 +0530
+
+    updated the men's section
+
+[33mcommit c5f87e43ab152e9182eea71763ed6af8e70dab6d[m
+Author: Roop Teja <roopteja112@gmail.com>
+Date:   Sat Feb 1 07:39:08 2025 +0530
+
+    completion of Electronics section and moved files from one to another folders
+
+[33mcommit f3cd1de855b336e3c6629bb4ae49fa1a28974bc9[m
+Author: Roop Teja <roopteja112@gmail.com>
+Date:   Fri Jan 31 22:03:01 2025 +0530
+
+    updated airpods and laptops section
+
+[33mcommit 2386cbeb116cf4fe2c1debcfeec211888fe1454c[m
+Author: Roop Teja <roopteja112@gmail.com>
+Date:   Fri Jan 31 07:41:54 2025 +0530
+
+    updating the electronics section and styling, updating the cart section
+
+[33mcommit 19e531cd41d029bfc547f4e2b434e9117cb11458[m
+Author: Roop Teja <roopteja112@gmail.com>
+Date:   Thu Jan 30 07:50:21 2025 +0530
+
+    updated the filter section
+
+[33mcommit 880cb7ee251ead6c33d4059766c35a4714c539f2[m
+Author: Roop Teja <roopteja112@gmail.com>
+Date:   Wed Jan 29 07:41:39 2025 +0530
+
+    uploading Files
