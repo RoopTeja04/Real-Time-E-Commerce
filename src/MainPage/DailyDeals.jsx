@@ -42,9 +42,9 @@ const DailyDeals = () => {
   ];
 
   const generateDeals = () => {
-    const offers = Array.from({ length: 10 }, () => Math.floor( 1 + Math.random() * 85 ) )
+    const offers = Array.from({ length: 12 }, () => Math.floor( 1 + Math.random() * 85 ) )
     const getRandomData = (data, count) => [...data].sort(() => Math.random() - 0.5).slice(0, count);
-    const selectedData = getRandomData(allShopData, 10);
+    const selectedData = getRandomData(allShopData, 12);
 
     setFinalDailyDeal(
       selectedData.map((item, index) => {
@@ -73,7 +73,7 @@ const DailyDeals = () => {
 
   return(
     <div className='py-10 mx-10 min-h-screen'>
-      <div className='grid grid-cols-3 gap-14'>
+      <div className='grid grid-cols-4 gap-16'>
         {
           finalDailyDeal.map((item, index) => (
             <div className={`border-2 rounded-lg p-6 flex flex-col items-center ${ theme === "Light" ? "border-white" : "border-gray-900" }`} key={`${item.id}-${index}`}>
