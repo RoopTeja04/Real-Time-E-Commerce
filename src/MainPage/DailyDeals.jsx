@@ -59,8 +59,6 @@ const DailyDeals = () => {
     );
   };
 
-  console.log(finalDailyDeal)
-
   useEffect(() => {
     generateDeals();
 

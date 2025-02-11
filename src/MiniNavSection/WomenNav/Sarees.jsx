@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useCart } from '../../Carts&Orders/cartContext';
 import SareesData from '../../ShopData/LadiesWear/Sarees';
+import { useTheme } from '../../ContextAPI/ThemeContext';
 
 const Sarees = () => {
         
@@ -9,7 +10,7 @@ const Sarees = () => {
     const [ selectedRating, setSelectedRating ] = useState([]);
 
     const { AddToCart } = useCart();
-    const { theme } = useCart();
+    const { theme } = useTheme();
 
     const handleNameChange = (value) => {
         setSelectedNames((selectedNames) =>
@@ -182,21 +183,21 @@ const Sarees = () => {
                 <div className="flex flex-col px-8 py-8 w-full">
                     {filteredData.length > 0 ? (
                         <div className="grid grid-cols-4 gap-8">
-                            {
-                                filteredData.map((item) => (
-                                    <div className={`border-2 rounded-lg p-6 flex flex-col items-center ${ theme === "Light" ? "border-white" : "border-gray-900" }`} key={item.id}>
-                                        <img className="h-48 rounded-lg" src={item.imageURL} alt={item.name} />
-                                        <div className={`flex flex-col items-center mt-4 border-t-2 outline-offset-8 w-full ${ theme === "Light" ? "border-white" : "border-gray-900" }`}>
-                                            <p className="mt-2 font-semibold text-lg tracking-wide">{item.name}</p>
-                                            <span className="mt-1 text-lg tracking-wider">₹ {item.price.toLocaleString("hi-IN")} /-</span>
-                                        </div> 
-                                        <div className="flex flex-col space-y-3 mt-4">
-                                            <button className="bg-yellow-500 h-10 w-full px-8 rounded-lg text-black font-semibold tracking-wide text-base cursor-pointer" onClick={() => AddToCart(item)}>Add To Cart</button>
-                                            <button className="bg-green-500 h-10 w-full px-6 rounded-lg text-black font-semibold tracking-wide text-base cursor-pointer">Buy Now</button>
-                                        </div>     
-                                    </div>
-                                ))
-                            }
+                        {
+                            filteredData.map((item) => (
+                                <div className={`border-2 rounded-lg p-6 flex flex-col items-center ${ theme === "Light" ? "border-white" : "border-gray-900" }`} key={item.id}>
+                                    <img className="h-48 rounded-lg" src={item.imageURL} alt={item.name} />
+                                    <div className={`flex flex-col items-center mt-4 border-t-2 outline-offset-8 w-full ${ theme === "Light" ? "border-white" : "border-gray-900" }`}>
+                                        <p className="mt-2 font-semibold text-lg tracking-wide">{item.name}</p>
+                                        <span className="mt-1 text-lg tracking-wider">₹ {item.price.toLocaleString("hi-IN")} /-</span>
+                                    </div> 
+                                    <div className="flex flex-col space-y-3 mt-4">
+                                        <button className="bg-yellow-500 h-10 w-full px-8 rounded-lg text-black font-semibold tracking-wide text-base cursor-pointer" onClick={() => AddToCart(item)}>Add To Cart</button>
+                                        <button className="bg-green-500 h-10 w-full px-6 rounded-lg text-black font-semibold tracking-wide text-base cursor-pointer">Buy Now</button>
+                                    </div>     
+                                </div>
+                            ))
+                        }
                         </div>
                         ) : (
                         <>
