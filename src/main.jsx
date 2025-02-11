@@ -7,15 +7,17 @@ import { CartProvider } from './Carts&Orders/cartContext.jsx'
 import { ThemeProvider } from './ContextAPI/ThemeContext.jsx'
 import { AccountProvider } from './ContextAPI/AccountContext.jsx'
 import { OrderProvider } from './Carts&Orders/OrdersContext.jsx'
+import ScrollTop from './ScrollTop.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
+      <ScrollTop />
       <ThemeProvider>
         <OrderProvider>
           <CartProvider>
             <AccountProvider>
-              <App />
+                <App />
             </AccountProvider>
           </CartProvider>
         </OrderProvider>

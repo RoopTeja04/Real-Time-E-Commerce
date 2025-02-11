@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import MobilesData from "../../ShopData/Electronics/Mobile";
 import { useCart } from "../../Carts&Orders/cartContext";
 import { useTheme } from "../../ContextAPI/ThemeContext";
+import { Link } from "react-router-dom";
 
 const Mobiles = () => {
 
@@ -255,7 +256,9 @@ const Mobiles = () => {
           <div className="grid grid-cols-4 gap-8">
             {FilteredData.map((item) => (
               <div className={`${ theme === "Light" ? "border-white" : " border-gray-900"} border-2 rounded-lg p-6 flex flex-col items-center`} key={item.id}>
-                <img className="h-56 rounded-lg" src={item.imageURL} alt={item.name} />
+                <Link to={`/home/electronics/mobiles-view/${item.name}`} replace>
+                  <img className="h-56 rounded-lg" src={item.imageURL} alt={item.name} />
+                </Link>
                 <div className={`${ theme === "Light" ? "border-white" : "border-gray-900"} flex flex-col items-center mt-4 border-t-2 outline-offset-8 w-full`}>
                   <p className="mt-2 font-semibold text-lg tracking-wide">{item.name}</p>
                   <span className="mt-1 text-lg tracking-wider">₹ {item.price.toLocaleString("hi-IN")} /-</span>

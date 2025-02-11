@@ -41,6 +41,8 @@ import Speakers from './MiniNavSection/Gadgets/Speakers';
 import CricketBats from './MiniNavSection/Sports/CricketBats';
 import Jersey from './MiniNavSection/Sports/Jersey';
 import SportShoes from './MiniNavSection/Sports/SportShoes';
+import MobileSingle from './ComponentSinglePage/MobileSingle';
+import ScrollTop from './ScrollTop';
 
 const App = () => {
 
@@ -48,6 +50,7 @@ const App = () => {
 
   return (
     <>
+      <ScrollTop />
         <Routes>
           <Route path='/' element={
               Logined ? <Navigate to="/home" /> : <Login />
@@ -68,6 +71,7 @@ const App = () => {
               <Route path='laptops' element={<Laptops />} />
               <Route path='airpods' element={<Airpods />} />    
               <Route path='tvs' element={<Tvs />} />
+              <Route path="mobiles-view/:name" element={<MobileSingle />} />
             </Route>
             <Route path='/home/menswear' element={<MensWear />}>
               <Route index element={<Shirts />} />
