@@ -51,6 +51,16 @@ const MobileSingle = () => {
                         </div>
                     </div>
                     { !!DataItem.price === true ? <p className='text-green-600 font-base text-4xl mt-6 capitalize'>In Stock</p> : <p className='text-red-500 font-base text-4xl mt-6 capitalize'> Out of Stock</p> }
+                    <div className={`flex flex-col my-10 px-4 py-4 border-2 ${ theme === "Light" ? "border-white" : "border-gray-900"} w-1/2 rounded-lg`}>
+                        <label className={`${ theme === "Light" ? "border-white" : "border-gray-900"} flex space-x-2 border-2 m-2 rounded-lg p-4`}>
+                            <input type='radio'/>
+                            <p className=''>Online Payment</p>
+                        </label>
+                        <label className={`${ theme === "Light" ? "border-white" : "border-gray-900"} flex space-x-2 border-2 m-2 rounded-lg p-4`}>
+                            <input type='radio' />
+                            <p>Cash On Delievery (COD)</p>
+                        </label>
+                    </div>    
                 </div>
             </div>
         </div>
