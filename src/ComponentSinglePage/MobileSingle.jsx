@@ -19,18 +19,18 @@ const MobileSingle = () => {
         <div className='min-h-screen'>
             <div className='grid grid-cols-2 mx-10 mt-24'>
                 <div className='ml-24'>
-                    <img className='h-3/4 rounded-md cursor-pointer' src={DataItem.imageURL} alt={DataItem.name} />
+                    <img className='h-3/4 rounded-xl cursor-pointer' src={DataItem.imageURL} alt={DataItem.name} />
                 </div>
                 <div className='pt-4 flex flex-col'>
                     <span className='text-4xl tracking-wide font-medium' >{DataItem.name}</span>
                     <div className='mt-4 space-x-2 flex h-10 items-center'>
-                        <span className='text-2xl tracking-wide'>₹ {DataItem.price.toLocaleString("hi-IN")} /-</span>
+                        <span className='text-2xl tracking-wide'> { DataItem.price > 0 ? `₹ ${DataItem.price.toLocaleString("hi-IN")} /-`: " "}</span>
                         <span className='bg-green-600 rounded-md px-2 py-0.5 tracking-wide flex flex-row justify-evenly items-center w-14'><FaStar /><p className='pl-1 font-semibold'>{DataItem.rating}</p></span>
                     </div>
                     <div className='flex flex-col mt-4 space-y-2'>
-                        <span className='tracking-wide'>Ram & Storage: {DataItem.RAM} & {DataItem.Storage}</span>
-                        <span className='tracking-wide'>Camera: {DataItem.Camera}</span>
-                        <span className='tracking-wide'>Battery: {DataItem.Battery}</span>
+                        <span className='tracking-wider'>Ram & Storage: {DataItem.RAM} & {DataItem.Storage}</span>
+                        <span className='tracking-wider'>Camera: {DataItem.Camera}</span>
+                        <span className='tracking-wider'>Battery: {DataItem.Battery}</span>
                     </div>
                     <div className='flex flex-row mt-14 space-x-8'>
                         <div className='flex flex-col items-center space-y-3'>
