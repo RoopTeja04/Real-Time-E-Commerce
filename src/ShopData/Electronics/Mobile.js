@@ -3,7 +3,7 @@ const Mobiles = [
         id: 1,
         name: "Apple iPhone 13",
         imageURL: "https://rukminim2.flixcart.com/image/750/900/ku04o7k0/cases-covers/back-cover/l/f/n/iphone-13-pro-max-egotude-original-imag77ugheduahgb.jpeg?q=20&crop=false",
-        price: 0,
+        price: 59000,
         RAM: "4GB",
         Storage: "128GB / 256GB / 512GB",
         Camera: "12MP (wide) + 12MP (ultrawide), 12MP front",

@@ -261,7 +261,7 @@ const Mobiles = () => {
                 </Link>
                 <div className={`${ theme === "Light" ? "border-white" : "border-gray-900"} flex flex-col items-center mt-4 border-t-2 outline-offset-8 w-full`}>
                   <p className="mt-2 font-semibold text-lg tracking-wide">{item.name}</p>
-                  <span className="mt-1 text-lg tracking-wider">₹ {item.price.toLocaleString("hi-IN")} /-</span>
+                  <span className="mt-1 text-lg tracking-wider">{ item.price > 0 ? `₹ ${item.price.toLocaleString("hi-IN")}/-` : "Out Of Stock"}</span>
                 </div> 
                 <div className="flex flex-col space-y-3 mt-4">
                   <button className="bg-yellow-500 h-10 w-full px-8 rounded-lg text-black font-semibold tracking-wide text-base cursor-pointer hover:bg-yellow-600 transition-all duration-300 ease-linear" onClick={() => AddToCart(item)}>Add To Cart</button>
