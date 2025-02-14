@@ -43,6 +43,8 @@ import Jersey from './MiniNavSection/Sports/Jersey';
 import SportShoes from './MiniNavSection/Sports/SportShoes';
 import MobileSingle from './ComponentSinglePage/MobileSingle';
 import ScrollTop from './ScrollTop';
+import OnlinePayment from './PaymentComponents/OnlinePayment';
+import CashPayment from './PaymentComponents/CashPayment';
 
 const App = () => {
 
@@ -114,6 +116,8 @@ const App = () => {
             <Route path='/home/daily-deals' element={<DailyDeals />} />
             <Route path='/home/customer-service' element={<CustomerService />} />
             <Route path='/home/account' element={<Account />} />
+            <Route path='/home/online-payemt' element={<OnlinePayment />} />
+            <Route path='/home/cash-payment' element={<CashPayment />} />
           </Route>
         </Routes>
     </>

@@ -19,10 +19,10 @@ const MobileSingle = () => {
 
     const handleBuyNow = () => {
         if(paymentOption === "Online"){
-
+            window.location.href="/home/online-payemt"
         }
         else if(paymentOption === "COD"){
-
+            window.location.href="/home/cash-payment"
         }
         else{
             alert("please select the payment option")
