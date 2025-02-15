@@ -6,21 +6,21 @@ import { BrowserRouter } from 'react-router-dom'
 import { CartProvider } from './Carts&Orders/cartContext.jsx'
 import { ThemeProvider } from './ContextAPI/ThemeContext.jsx'
 import { AccountProvider } from './ContextAPI/AccountContext.jsx'
-import { OrderProvider } from './Carts&Orders/OrdersContext.jsx'
 import ScrollTop from './ScrollTop.jsx'
+import { OrderProvider } from './Carts&Orders/OrderContext.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
       <ScrollTop />
       <ThemeProvider>
-        <OrderProvider>
           <CartProvider>
-            <AccountProvider>
-                <App />
-            </AccountProvider>
+            <OrderProvider>
+              <AccountProvider>
+                  <App />
+              </AccountProvider>
+            </OrderProvider>
           </CartProvider>
-        </OrderProvider>
       </ThemeProvider>
     </BrowserRouter>
   </StrictMode>

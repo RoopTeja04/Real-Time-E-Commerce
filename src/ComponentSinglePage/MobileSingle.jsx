@@ -8,21 +8,25 @@ import { TbTruckReturn } from "react-icons/tb";
 import { MdVerifiedUser } from "react-icons/md";
 import { FaAward } from "react-icons/fa";
 import { useCart } from '../Carts&Orders/cartContext';
+import { useOrder } from '../Carts&Orders/OrderContext';
 
 const MobileSingle = () => {
 
     const { name } = useParams();
     const { theme } = useTheme();
     const { AddToCart } = useCart();
+    const { handleOrder } = useOrder();
 
     const [ paymentOption, setpaymentOption ] = useState("");
 
-    const handleBuyNow = () => {
+    const handleBuyNow = (DataItem) => {
         if(paymentOption === "Online"){
             window.location.href="/home/online-payemt"
+            handleOrder(DataItem);
         }
         else if(paymentOption === "COD"){
             window.location.href="/home/cash-payment"
+            handleOrder(DataItem);
         }
         else{
             alert("please select the payment option")
@@ -98,7 +102,7 @@ const MobileSingle = () => {
                         </button>
                         <button
                             className="bg-green-400 h-12 w-1/2 px-6 rounded-xl text-black font-semibold tracking-wide text-lg cursor-pointer hover:bg-green-700 transition-all duration-300 ease-linear"
-                            onClick={handleBuyNow}
+                            onClick={ () => {handleBuyNow(); handleOrder(DataItem)}}
                         >
                             Buy Now
                         </button>
