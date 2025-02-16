@@ -63,7 +63,7 @@ const Mobiles = () => {
 
   return (
     <div className="min-h-screen flex flex-row w-full">
-      <div className={`flex flex-col ${ theme === "Light" ? "border-gray-100" : "border-gray-900"} border-r-2  w-1/6 px-4 py-4`}>
+      <div className={`flex flex-col ${theme === "Light" ? "border-gray-100" : "border-gray-900"} border-r-2  w-1/6 px-4 py-4`}>
         <div className="flex flex-col w-full">
           <p className="text-lg font-semibold">Product Name</p>
           <label>
@@ -255,27 +255,27 @@ const Mobiles = () => {
         {FilteredData.length > 0 ? (
           <div className="grid grid-cols-4 gap-8">
             {FilteredData.map((item) => (
-              <div className={`${ theme === "Light" ? "border-white" : " border-gray-900"} border-2 rounded-lg p-6 flex flex-col items-center`} key={item.id}>
-                <Link to={`/home/electronics/mobiles-view/${item.name}`} replace>
+              <div className={`${theme === "Light" ? "border-white" : " border-gray-900"} border-2 rounded-lg p-6 flex flex-col items-center`} key={item.id}>
+                <Link to={`/home/electronics/mobiles-view/${item.name}`} className="flex flex-col items-center" replace>
                   <img className="h-56 rounded-lg" src={item.imageURL} alt={item.name} />
+                  <div className={`${theme === "Light" ? "border-white" : "border-gray-900"} flex flex-col items-center mt-4 border-t-2 outline-offset-8 w-full`}>
+                    <p className="mt-2 font-semibold text-lg tracking-wide">{item.name}</p>
+                    <span className="mt-1 text-lg tracking-wider">{item.price > 0 ? `₹ ${item.price.toLocaleString("hi-IN")}/-` : "Out Of Stock"}</span>
+                  </div>
                 </Link>
-                <div className={`${ theme === "Light" ? "border-white" : "border-gray-900"} flex flex-col items-center mt-4 border-t-2 outline-offset-8 w-full`}>
-                  <p className="mt-2 font-semibold text-lg tracking-wide">{item.name}</p>
-                  <span className="mt-1 text-lg tracking-wider">{ item.price > 0 ? `₹ ${item.price.toLocaleString("hi-IN")}/-` : "Out Of Stock"}</span>
-                </div> 
                 <div className="flex flex-col space-y-3 mt-4">
                   <button className="bg-yellow-500 h-10 w-full px-8 rounded-lg text-black font-semibold tracking-wide text-base cursor-pointer hover:bg-yellow-600 transition-all duration-300 ease-linear" onClick={() => AddToCart(item)}>Add To Cart</button>
                   <button className="bg-green-400 h-10 w-full px-6 rounded-lg text-black font-semibold tracking-wide text-base cursor-pointer hover:bg-green-700 transition-all duration-300 ease-linear">Buy Now</button>
-                </div>               
+                </div>
               </div>
             ))}
           </div>
         ) : (
           <>
             <div className="flex flex-col items-center mt-28">
-              <img 
+              <img
                 className="h-4/5 w-1/2"
-                src={`https://www.new4you.in/img/no_products_found.png`} alt="No items found" 
+                src={`https://www.new4you.in/img/no_products_found.png`} alt="No items found"
               />
             </div>
           </>

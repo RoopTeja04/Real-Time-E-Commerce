@@ -1,6 +1,5 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { useCart } from "../Carts&Orders/cartContext";
-import { useOrder } from '../Carts&Orders/OrderContext';
 
 const AccountContext = createContext();
 
@@ -16,7 +15,6 @@ export const AccountProvider = ({ children }) => {
     }
 
     const { cartItems } = useCart(); 
-    const { itemsOrder } = useOrder();
     const [ account, setAccount] = useState(initialValues);
     const [ updateAccount, setUpdateAccount ] = useState([]);
 
@@ -26,10 +24,10 @@ export const AccountProvider = ({ children }) => {
             const currentUser = localStorage.getItem("CurrentUser");
             const currentPassword  = localStorage.getItem("CurrentPassword");
     
-            setAccount((account) => ({...account, name: currentUser, password: currentPassword, confirmPassword: currentPassword, cartItems: cartItems, itemsOrder:itemsOrder}));
+            setAccount((account) => ({...account, name: currentUser, password: currentPassword, confirmPassword: currentPassword, cartItems: cartItems, }));
     
         }
-    }, [cartItems, itemsOrder]);
+    }, [cartItems]);
 
     return(
         <AccountContext.Provider value={{ account }}>
