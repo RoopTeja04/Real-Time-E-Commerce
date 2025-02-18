@@ -30,5 +30,5 @@ export const CartProvider = ({ children }) => {
 }
 
 export const useCart = () => {
-    return useContext(cartContext)
+    return useContext(cartContext);
 }
