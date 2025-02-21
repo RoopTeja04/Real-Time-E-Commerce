@@ -15,13 +15,19 @@ const MobileSingle = () => {
     const { handleOrder } = useOrder();
     const  navigate  = useNavigate();
 
-    const [ paymentMethod, setPaymentMethod ] = useState('nil');
+    const [ paymentMethod, setPaymentMethod ] = useState('');
 
     const DataItems = MobilesData.find((item) => item.name === name);
 
+    const handleBuyNow = () => {
+        handleOrder(DataItems);
+        handlePaymentOption();
+    }
+
     const handlePaymentOption  = () => {
-        if(!paymentMethod){
-            alert("Please select the payment method")
+        if(paymentMethod === ""){
+            alert("Please select the payment method");
+            return;
         }
         navigate(paymentMethod === "Cash on" ? '/home/cash-payment' : '/home/online-payment')
     }
@@ -74,7 +80,7 @@ const MobileSingle = () => {
                             {
                                 DataItems.price > 0 ? (<button
                                     className="bg-green-400 h-12 w-2/5 px-8 rounded-lg text-black font-semibold tracking-wide text-base cursor-pointer hover:bg-green-700 transition-all duration-300 ease-linear"
-                                    onClick={() => (handlePaymentOption(), handleOrder(DataItems))}
+                                    onClick={handleBuyNow}
                                 >
                                     Buy Now
                                 </button>) :("")
